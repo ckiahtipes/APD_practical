@@ -12,16 +12,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-## APD Workshop Series: R Basics for Paleoecologists
+## APD Workshop Series: R Basics for Paleoecologists. 
+\
 
-This is meant to be a simple guide to help otherwise busy paleoecologists make use of some helpful tools for conducting research and publishing. All the while, you will also be making your work reproducible.
+This is meant to be a simple guide to help otherwise busy paleoecologists make use of some helpful tools for conducting research and publishing. All the while, you will also be making your work reproducible.  
+\
+\
 
-### Required Software
+### Required Software and Download Instructions
+\
 
-For this workshop we will be using two separate, but related pieces of open-source software: R and R Studio. R is a standalone open-source software package for statistical analysis. It is both a programming language and an environment within which you can use the language to execute commands. R is an instantiation of a tiny universe with rules, many of which you do not know. R Studio is a wrapper for R that allows us to see a bit more of what is going on inside of R and to control it through the window rather than exclusively through the "console". 
+For this workshop we will be using two separate, but related pieces of open-source software: R and R Studio.  
+\
+R is a standalone open-source software for statistical analysis. It has an interesting history (you can find more here), but it is *both* a programming language and an environment within which you can use the language to execute commands. Thus, it is described as the "R Statistical Computing Environment". R is an instantiation of a tiny universe with many rules, few (or none!) of which you know.  
+\
+R Studio is a wrapper for R that allows us to see a bit more of what is going on inside of R and to control it through the window rather than exclusively through the "console". R Studio knows the rules so you don't have to. Much like a spell-checker in word processing, R Studio checks your code for you. More on this later.  
+\
+\
 
-
-
+#### Installing R Statistical Computing Environment
+\
 
 **First**, you need to install R from [cran.r-project.org](https://cran.r-project.org/). Click this link or the logo below, at the top of the page you will find a section titled "Download and Install R" and choose the appropriate download for your operating system (OS). 
 
@@ -36,25 +46,106 @@ knitr::include_graphics("images/cran_page.jpg")
 ```
 
 
+Once you've selected the R version for your OS, you'll be given some download options. Select "base" and download the .exe file (Windows).
 
-
-Once you've selected the R version for your OS, you'll be given some download options. Select "base" and download the .exe file (Windows) or .pkg file (macOS).
-
-```{r screenshot of download options, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 2.** cran.R-project website download options, select 'base'."}
+```{r screenshot of download options, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 2.** cran.R-project windows download options, select 'base'."}
 
 knitr::include_graphics("images/cran_download.png")
 
 ```
 
+
 Double-click on this file and follow the instructions from your machine's prompts for installation. This differs slightly between each operating system and the version of the operating system you're using.
+
+If you're using macOS, you will be directed to a slightly different looking page with multiple download options. Here, you much choose a package based on the version of the macOS you're using. If you're using OS 11 or greater (Apple names their updates, so this one is 'Big Sur') select the top option. If you're using versions before this ('High Sierra'), then download the second option.
+
+```{r screenshot of macOS DL options, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 3.** cran.R-project macOS download options"}
+
+knitr::include_graphics("images/cran_macDL.png")
+
+```
+
 
 For windows users, R will install to your "program files" folder. For macOS users, you will need to move the R.app folder from the package (once opened) and drag it into your applications folder. 
 
-**Second**, let's open up R to make sure that it works and to look at some important features that will help you later on.
+#### Introduction to R Syntax, Objects, and Functions
 
-**Third**, you will need to [download R Studio](https://posit.co/downloads/) and install it.
+**Second**, let's open up R to make sure that it works and to look at some important features that will help you later on. When you open R, you only get a text window called the console. This is where all of the action happens and as soon as you open R, you're given some basic, but important information.
+
+```{r screenshot of R console running solo, echo=FALSE, fig.align = 'center', fig.cap = "**Figure 4.** R Console with annotations for working directory, version, and citation instructions."}
+
+knitr::include_graphics("images/R_console.png")
+
+```
+
+
+Note the following:
+-the *working directory* is folder where R looks when it goes to find or write things.
+-the software version is at the top of the initialization text, this information is important for citations.
+-the intialization text includes instructions for getting information about licensing, help, and for citing R.
+
+
+We can actually try out a bit of coding at this point. Try entering the following into the console and hitting enter.
+
+```{r console step 1, echo = TRUE, eval = FALSE}
+
+citation()
+
+```
+
+
+This can also be written as:
+
+```{r console step 2, echo = TRUE, eval = FALSE}
+
+citation("base")
+
+```
+
+Both these commands give us the same result.
+
+```{r console step 3, echo = FALSE}
+
+citation()
+
+```
+ 
+**Congratulations!** If this is your first time using R, then you just ran your first command!
+
+Note that "base" gives us the same output because the R Statistical Computing Environment comes with a lot of basic functions (hence "base") that it can do. Later, we will explore how we can expand R with "packages" written and maintained by other users.
+
+There is a bit of vocabulary to know that will help you use R. *Commands* are any instructions you give to R in the console. You enter text after the ">" sign in the console and hit <enter> on the keyboard to give R commands. The R environment runs primarily by creating *objects* and applying *functions* to them. In order for R to do things with an object, it has to know that it exists.
+
+All coding languages run on *syntax* (rules for combining things for communication). Here's some key symbols in R syntax.
+
+|Syntax|Action|
+|-------:|-------:|
+|=| equals sign is used to assign data to objects|
+|<-| arrow is the same as equals sign, assigns data to objects|
+|#| hashes designate non-coding regions, used to annotate code|
+
+```{r vocabulary table, echo=TRUE}
+
+# Here, we use "=" to create an object called "x" and assign it the value of 5.
+
+x = 5
+
+```
+
+#### Installing R Studio
+
+**Third**, you will need to [download R Studio](https://posit.co/download/rstudio-desktop/) and install it. R Studio is available as a "free version" and a "professional" version. The links here go directly to the free version. 
 
 [![R Studio logo](https://d33wubrfki0l68.cloudfront.net/57299a1dcd979c623325f11bf5e5ce60f3d4eb00/e4602/wp-content/uploads/2018/10/black.png){width=25%}](https://posit.co/downloads/)
+
+The webpage should detect what machine you're using and suggest the correct version of R Studio. If it does not, there are other download options below which correspond to various OS and OS versions. You will notice that the webpage also tells you to install R (which we've already done), so you can skip to "2" and download R Studio.
+
+```{r sceenshot of R Studio Download page, echo = FALSE, fig.align = 'center', fig.cap= "**Figure 5.** R Studio Download Page."}
+
+knitr::include_graphics("images/R_studio-DL.png")
+
+```
+
 
 ## Including Plots
 
