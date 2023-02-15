@@ -34,9 +34,11 @@ R Studio is a wrapper for R that allows us to see a bit more of what is going on
 \
 
 **First**, you need to install R from [cran.r-project.org](https://cran.r-project.org/). Click this link or the logo below, at the top of the page you will find a section titled "Download and Install R" and choose the appropriate download for your operating system (OS). 
+\
 
 [![R Logo](https://cran.r-project.org/Rlogo.svg){width=25%}](https://cran.r-project.org/)
 
+\
 It should look something like this:
 
 ```{r screenshot of R main site, echo=FALSE, fig.align= 'center', fig.cap= "**Figure 1**. cran.R-project website landing page."}
@@ -44,6 +46,7 @@ It should look something like this:
 knitr::include_graphics("images/cran_page.jpg")
 
 ```
+\
 
 
 Once you've selected the R version for your OS, you'll be given some download options. Select "base" and download the .exe file (Windows).
@@ -53,7 +56,7 @@ Once you've selected the R version for your OS, you'll be given some download op
 knitr::include_graphics("images/cran_download.png")
 
 ```
-
+\
 
 Double-click on this file and follow the instructions from your machine's prompts for installation. This differs slightly between each operating system and the version of the operating system you're using.
 
@@ -64,9 +67,11 @@ If you're using macOS, you will be directed to a slightly different looking page
 knitr::include_graphics("images/cran_macDL.png")
 
 ```
-
+\
 
 For windows users, R will install to your "program files" folder. For macOS users, you will need to move the R.app folder from the package (once opened) and drag it into your applications folder. 
+\
+\
 
 #### Introduction to R Syntax, Objects, and Functions
 
@@ -77,22 +82,23 @@ For windows users, R will install to your "program files" folder. For macOS user
 knitr::include_graphics("images/R_console.png")
 
 ```
-
+\
 
 Note the following:
 -the *working directory* is folder where R looks when it goes to find or write things.
 -the software version is at the top of the initialization text, this information is important for citations.
 -the intialization text includes instructions for getting information about licensing, help, and for citing R.
+-the *command line* is the line starting with ">", which is where you politely ask R to do things for you.
 
 
-We can actually try out a bit of coding at this point. Try entering the following into the console and hitting enter.
+We can actually try out a bit of coding at this point. Type the code below in your R console and hit "enter". You can also copy-paste from this document into the console as well. 
 
 ```{r console step 1, echo = TRUE, eval = FALSE}
 
 citation()
 
 ```
-
+\
 
 This can also be written as:
 
@@ -101,6 +107,7 @@ This can also be written as:
 citation("base")
 
 ```
+\
 
 Both these commands give us the same result.
 
@@ -109,12 +116,15 @@ Both these commands give us the same result.
 citation()
 
 ```
- 
-**Congratulations!** If this is your first time using R, then you just ran your first command!
+\
+
+**Congratulations!** If this is your first time using R, then you just ran your first *function*!
 
 Note that "base" gives us the same output because the R Statistical Computing Environment comes with a lot of basic functions (hence "base") that it can do. Later, we will explore how we can expand R with "packages" written and maintained by other users.
 
-There is a bit of vocabulary to know that will help you use R. *Commands* are any instructions you give to R in the console. You enter text after the ">" sign in the console and hit <enter> on the keyboard to give R commands. The R environment runs primarily by creating *objects* and applying *functions* to them. In order for R to do things with an object, it has to know that it exists.
+We have accumulated some vocabulary at this point and it is helpful to explain these terms and how they relate to each other here. R will do exactly what you tell it to, so it helps to know how it thinks. The R environment runs almost entirely by creating *objects* and applying *functions* to them. Like we experienced above, *functions* make things happen. In order for R to do things with an object, it has to know that it exists. 
+
+We could use "base" above because the citation() is already a part of R and knows where to find it (its always an object). 
 
 All coding languages run on *syntax* (rules for combining things for communication). Here's some key symbols in R syntax.
 
@@ -130,7 +140,13 @@ All coding languages run on *syntax* (rules for combining things for communicati
 
 x = 5
 
+# We can also use "<-" to create another object called "y" and assign it the value of 6.
+
+y <- 6
+
 ```
+
+
 
 #### Installing R Studio
 
