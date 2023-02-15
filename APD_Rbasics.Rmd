@@ -1,0 +1,43 @@
+---
+title: "R Basics for Paleoecologists"
+author: "C.A. Kiahtipes"
+date: "2/14/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+
+```
+
+## APD Workshop Series: R Basics for Paleoecologists
+
+This is meant to be a simple guide to help otherwise busy paleoecologists make use of some helpful tools for conducting research and publishing. All the while, you will also be making your work reproducible.
+
+### Required Software
+
+For this workshop we will be using two separate, but related pieces of software: R and R Studio. R is a standalone open-source software package for statistical analysis. It is both a programming language and an environment within which you can use the language to execute commands. R is an instantiation of a tiny universe with rules, many of which you do not know. R Studio is a wrapper for R that allows us to see a bit more of what is going on inside of R.
+
+**First**, you need to install R from [cran.r-project.org](https://cran.r-project.org/). Click this link or the logo below, at the top of the page you will find a section titled "Download and Install R" and choose the appropriate download for your operating system. 
+
+[![R Logo](https://cran.r-project.org/Rlogo.svg){width=25%}](https://cran.r-project.org/)
+
+It should look something like this:
+
+```{r screenshot of R main site, echo=FALSE, fig.align= 'center', fig.cap= "cran.R-project website landing page."}
+
+knitr::include_graphics("images/cran_page.jpg")
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
