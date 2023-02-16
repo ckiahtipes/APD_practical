@@ -34,9 +34,11 @@ R Studio is a wrapper for R that allows us to see a bit more of what is going on
 \
 
 **First**, you need to install R from [cran.r-project.org](https://cran.r-project.org/). Click this link or the logo below, at the top of the page you will find a section titled "Download and Install R" and choose the appropriate download for your operating system (OS). 
+\
 
 [![R Logo](https://cran.r-project.org/Rlogo.svg){width=25%}](https://cran.r-project.org/)
 
+\
 It should look something like this:
 
 ```{r screenshot of R main site, echo=FALSE, fig.align= 'center', fig.cap= "**Figure 1**. cran.R-project website landing page."}
@@ -44,6 +46,7 @@ It should look something like this:
 knitr::include_graphics("images/cran_page.jpg")
 
 ```
+\
 
 
 Once you've selected the R version for your OS, you'll be given some download options. Select "base" and download the .exe file (Windows).
@@ -53,7 +56,7 @@ Once you've selected the R version for your OS, you'll be given some download op
 knitr::include_graphics("images/cran_download.png")
 
 ```
-
+\
 
 Double-click on this file and follow the instructions from your machine's prompts for installation. This differs slightly between each operating system and the version of the operating system you're using.
 
@@ -64,9 +67,11 @@ If you're using macOS, you will be directed to a slightly different looking page
 knitr::include_graphics("images/cran_macDL.png")
 
 ```
-
+\
 
 For windows users, R will install to your "program files" folder. For macOS users, you will need to move the R.app folder from the package (once opened) and drag it into your applications folder. 
+\
+\
 
 #### Introduction to R Syntax, Objects, and Functions
 
@@ -77,22 +82,23 @@ For windows users, R will install to your "program files" folder. For macOS user
 knitr::include_graphics("images/R_console.png")
 
 ```
-
+\
 
 Note the following:
--the *working directory* is folder where R looks when it goes to find or write things.
+-the *working directory* is the folder where R looks when it goes to find or write things.
 -the software version is at the top of the initialization text, this information is important for citations.
 -the intialization text includes instructions for getting information about licensing, help, and for citing R.
+-the *command line* is the line starting with ">", which is where you politely ask R to do things for you.
 
 
-We can actually try out a bit of coding at this point. Try entering the following into the console and hitting enter.
+We can actually try out a bit of coding at this point. Type the code below in your R console and hit "enter". You can also copy-paste from this document into the console as well. 
 
 ```{r console step 1, echo = TRUE, eval = FALSE}
 
 citation()
 
 ```
-
+\
 
 This can also be written as:
 
@@ -101,6 +107,7 @@ This can also be written as:
 citation("base")
 
 ```
+\
 
 Both these commands give us the same result.
 
@@ -109,20 +116,27 @@ Both these commands give us the same result.
 citation()
 
 ```
- 
-**Congratulations!** If this is your first time using R, then you just ran your first command!
+\
+
+**Congratulations!** If this is your first time using R, then you just ran your first *function*!
 
 Note that "base" gives us the same output because the R Statistical Computing Environment comes with a lot of basic functions (hence "base") that it can do. Later, we will explore how we can expand R with "packages" written and maintained by other users.
 
-There is a bit of vocabulary to know that will help you use R. *Commands* are any instructions you give to R in the console. You enter text after the ">" sign in the console and hit <enter> on the keyboard to give R commands. The R environment runs primarily by creating *objects* and applying *functions* to them. In order for R to do things with an object, it has to know that it exists.
+We have accumulated some vocabulary at this point and it is helpful to explain these terms and how they relate to each other here. R will do exactly what you tell it to, so it helps to know how it thinks. The R environment runs almost entirely by creating *objects* and applying *functions* to them. Like we experienced above, *functions* make things happen. In order for R to do things with an object, it has to know that it exists. 
+
+We could use "base" above because the citation() is already a part of R and knows where to find it (its always an object). Let's learn how to create an object. 
 
 All coding languages run on *syntax* (rules for combining things for communication). Here's some key symbols in R syntax.
+\
+\
 
 |Syntax|Action|
 |-------:|-------:|
 |=| equals sign is used to assign data to objects|
-|<-| arrow is the same as equals sign, assigns data to objects|
+|<-| arrow-dash is the same as equals sign, assigns data to objects|
 |#| hashes designate non-coding regions, used to annotate code|
+
+You can copy-paste the entire section of code below and run it. Another nice thing about R is that you can submit a whole list of commands at once, as long as each of these commands and function are entered correctly. Because my annotations are preceded by a hash "#", they're not read as commands. As for whether one should use "=" or "<-", there are trade-offs to either choice. I use "=" becauese it requires typing fewer characters. 
 
 ```{r vocabulary table, echo=TRUE}
 
@@ -130,7 +144,17 @@ All coding languages run on *syntax* (rules for combining things for communicati
 
 x = 5
 
+# We can also use "<-" to create another object called "y" and assign it the value of 6.
+
+y <- 6
+
 ```
+\
+
+Once you run the above code, you may notice that basically nothing happened. R happily ran your commands and creates an object named "x" with a value of 5 and an object "y" with a value of 6. You didn't tell R to give you any output, so none is given. Type "x" in the command line and then hit "enter". Do the same for "y". R should return the values each time after you hit "enter". This is rudimentary, but you are *coding* now. Also, now that we've experienced what R is like, we can gain a better appreciation for what R Studio does for us.
+
+\
+\
 
 #### Installing R Studio
 
@@ -138,21 +162,82 @@ x = 5
 
 [![R Studio logo](https://d33wubrfki0l68.cloudfront.net/57299a1dcd979c623325f11bf5e5ce60f3d4eb00/e4602/wp-content/uploads/2018/10/black.png){width=25%}](https://posit.co/downloads/)
 
-The webpage should detect what machine you're using and suggest the correct version of R Studio. If it does not, there are other download options below which correspond to various OS and OS versions. You will notice that the webpage also tells you to install R (which we've already done), so you can skip to "2" and download R Studio.
+The webpage should detect what sort of OS you're using and suggest the correct version of R Studio. If it does not, there are other download options below which correspond to various OS and OS versions. You will notice that the webpage also tells you to install R (which we've already done), so you can skip to "2" and download R Studio.
 
 ```{r sceenshot of R Studio Download page, echo = FALSE, fig.align = 'center', fig.cap= "**Figure 5.** R Studio Download Page."}
 
 knitr::include_graphics("images/R_studio-DL.png")
 
 ```
+\
+\
 
+You'll get either a .exe or a .pkg file when you download R Studio (depending on OS) and you can then run this file and follow the prompts from the installation wizard. Windows users will find R Studio in their program files while masOS users will have to move the R Studio app into the Applications folder. Make a shortcut to your desktop (Windows) or put the app in your taskbar (macOS) for easy access.
 
-## Including Plots
+Now, let's open R Studio and take a look at it. Double-click on the icon.
 
-You can also embed plots, for example:
+```{r screenshot of blank R Studio, echo=FALSE, fig.align = 'center', fig.cap= "**Figure 6.** R Studio window."}
 
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
+\
+\
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+You should have three panes open in the window, as shown in Fig 6. above. The leftmost should look familiar. It is the R console! This is where you'll enter commands to make R do things. It also shows you some of the same information, such as the location of the working directory. If you look carefully, this pane has two tabs: "Console" and "Jobs". Stick with the console for now, but this area of the window is dedicated to what R is *doing*.  
+
+On the right, the top pane also has tabs: "Environment", "History", "Connections", "Git", and "Tutorial". We will rely on "Environment" and "History" more than the others for this tutorial. The "Environment" allows us to see inside R's brain. Let's take a quick look at how this works by entering the same commands from our first use of base R. You can type these commands manually or copy paste them. 
+
+```{r simple objects in R Studio, echo = TRUE}
+
+x = 5
+y = 6
+
+```
+\
+
+After you've run both commands (after hitting "enter"), you should see the environment update to include the new objects you've made. Base R didn't show you anything, but we demonstrated that R remembered these objects and recalled their values. Here, we can see what R knows.
+\
+
+```{r screenshot of Rstudio step 1, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 7.** R Studio showing updated Environment pane after creating objects."}
+
+knitr::include_graphics("images/Rst_env.png")
+
+```
+\
+\
+
+The bottom-right pane has several file-navigation related tabs: "Files", "Plots", "Packages", "Help", and "Viewer". We will make the most use of "Files", "Plots", and "Help" during the workshop. It defaults to "Files" when we open R Studio. It will show you the contents of the working directory as well as the file path to the working directory (below the options - "New Folder", "Delete", "Rename", "More"). This can be really helpful when troubleshooting your code. Remember, R has to be able to find your data. In order to help it do so, you have to know where R thinks it is. R always thinks it is in the working directory and this pane (plus the top of the Console) will help you figure out where R thinks that working directory is.  
+
+Another helpful pane in the bottom-right is the plots pane. R Studio saves all of the plots that you make here. Because we've already defined two objects, let's plot them and see what happens.
+
+```{r plotting x and y objects, echo = TRUE, eval = FALSE}
+
+plot(x, y)
+
+```
+\
+\
+
+This should create a plot in this pane, looking something like this.
+
+```{r plotting results screenshot, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 8.** R Studio window showing plot of values of x and y."}
+
+knitr::include_graphics("images/Rst_plt.png")
+
+```
+\
+\
+
+**Excellent!** You've already run your first function, defined objects, and then plotted them. This is basically all that R does, but we can create objects with multiple dimensions (vectors, matrices, arrays!) and run complicated functions to evaluate, synthesize, and plot this information.
+
+
+
+
+
+
+
+
+
+
+
+
+
