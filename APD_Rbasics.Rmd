@@ -4,6 +4,7 @@ author: "C.A. Kiahtipes"
 date: "2/14/2023"
 output:
   pdf_document: default
+  word_document: default
   html_document: default
 ---
 
