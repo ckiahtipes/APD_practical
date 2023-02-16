@@ -2,7 +2,9 @@
 title: "R Basics for Paleoecologists"
 author: "C.A. Kiahtipes"
 date: "2/14/2023"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -36,7 +38,7 @@ R Studio is a wrapper for R that allows us to see a bit more of what is going on
 **First**, you need to install R from [cran.r-project.org](https://cran.r-project.org/). Click this link or the logo below, at the top of the page you will find a section titled "Download and Install R" and choose the appropriate download for your operating system (OS). 
 \
 
-[![R Logo](https://cran.r-project.org/Rlogo.svg){width=25%}](https://cran.r-project.org/)
+[![R Logo](https://www.r-project.org/logo/Rlogo.png){width=25%}](https://cran.r-project.org/)
 
 \
 It should look something like this:

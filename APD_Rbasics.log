@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.16)  16 FEB 2023 09:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.16)  16 FEB 2023 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,20 +504,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
  []
 
 
-LaTeX Warning: File `https://cran.r-project.org/Rlogo.svg' not found on input line 172.
+Underfull \hbox (badness 10000) in paragraph at lines 166--171
+
+ []
 
 
-! LaTeX Error: Unknown graphics extension: .svg.
+LaTeX Warning: File `https://www.r-project.org/logo/Rlogo.png' not found on input line 172.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+! Package pdftex.def Error: File `https://www.r-project.org/logo/Rlogo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 ...t]{https://cran.r-project.org/Rlogo.svg}}
+l.172 ...ttps://www.r-project.org/logo/Rlogo.png}}
                                                    
 Here is how much of TeX's memory you used:
- 11660 strings out of 477989
- 185309 string characters out of 5838627
+ 11659 strings out of 477989
+ 185489 string characters out of 5838627
  1853346 words of memory out of 5000000
  31659 multiletter control sequences out of 15000+600000
  543807 words of font info for 54 fonts, out of 8000000 for 9000
