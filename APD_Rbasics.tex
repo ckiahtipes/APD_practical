@@ -167,10 +167,11 @@ Environment}\label{installing-r-statistical-computing-environment}}
 \href{https://cran.r-project.org/}{cran.r-project.org}. Click this link
 or the logo below, at the top of the page you will find a section titled
 ``Download and Install R'' and choose the appropriate download for your
-operating system (OS).
+operating system (OS).\\
 
-\href{https://cran.r-project.org/}{\includegraphics[width=0.25\textwidth,height=\textheight]{https://cran.r-project.org/Rlogo.svg}}
+\href{https://cran.r-project.org/}{\includegraphics[width=0.25\textwidth,height=\textheight]{https://www.r-project.org/logo/Rlogo.png}}
 
+\hfill\break
 It should look something like this:
 
 \begin{figure}
@@ -181,6 +182,8 @@ It should look something like this:
 
 \caption{**Figure 1**. cran.R-project website landing page.}\label{fig:screenshot of R main site}
 \end{figure}
+
+\hfill\break
 
 Once you've selected the R version for your OS, you'll be given some
 download options. Select ``base'' and download the .exe file (Windows).
@@ -193,6 +196,8 @@ download options. Select ``base'' and download the .exe file (Windows).
 
 \caption{**Figure 2.** cran.R-project windows download options, select 'base'.}\label{fig:screenshot of download options}
 \end{figure}
+
+\hfill\break
 
 Double-click on this file and follow the instructions from your
 machine's prompts for installation. This differs slightly between each
@@ -214,9 +219,12 @@ Sierra'), then download the second option.
 \caption{**Figure 3.** cran.R-project macOS download options}\label{fig:screenshot of macOS DL options}
 \end{figure}
 
+\hfill\break
+
 For windows users, R will install to your ``program files'' folder. For
 macOS users, you will need to move the R.app folder from the package
-(once opened) and drag it into your applications folder.
+(once opened) and drag it into your applications folder.\\
+\strut \\
 
 \hypertarget{introduction-to-r-syntax-objects-and-functions}{%
 \paragraph{Introduction to R Syntax, Objects, and
@@ -237,20 +245,27 @@ important information.
 \caption{**Figure 4.** R Console with annotations for working directory, version, and citation instructions.}\label{fig:screenshot of R console running solo}
 \end{figure}
 
-Note the following: -the \emph{working directory} is folder where R
+\hfill\break
+
+Note the following: -the \emph{working directory} is the folder where R
 looks when it goes to find or write things. -the software version is at
 the top of the initialization text, this information is important for
 citations. -the intialization text includes instructions for getting
-information about licensing, help, and for citing R.
+information about licensing, help, and for citing R. -the \emph{command
+line} is the line starting with ``\textgreater{}'', which is where you
+politely ask R to do things for you.
 
-We can actually try out a bit of coding at this point. Try entering the
-following into the console and hitting enter.
+We can actually try out a bit of coding at this point. Type the code
+below in your R console and hit ``enter''. You can also copy-paste from
+this document into the console as well.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{citation}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
+
+\hfill\break
 
 This can also be written as:
 
@@ -259,6 +274,8 @@ This can also be written as:
 \FunctionTok{citation}\NormalTok{(}\StringTok{"base"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
+
+\hfill\break
 
 Both these commands give us the same result.
 
@@ -286,23 +303,31 @@ Both these commands give us the same result.
 ## citing R packages.
 \end{verbatim}
 
+\hfill\break
+
 \textbf{Congratulations!} If this is your first time using R, then you
-just ran your first command!
+just ran your first \emph{function}!
 
 Note that ``base'' gives us the same output because the R Statistical
 Computing Environment comes with a lot of basic functions (hence
 ``base'') that it can do. Later, we will explore how we can expand R
 with ``packages'' written and maintained by other users.
 
-There is a bit of vocabulary to know that will help you use R.
-\emph{Commands} are any instructions you give to R in the console. You
-enter text after the ``\textgreater{}'' sign in the console and hit on
-the keyboard to give R commands. The R environment runs primarily by
-creating \emph{objects} and applying \emph{functions} to them. In order
-for R to do things with an object, it has to know that it exists.
+We have accumulated some vocabulary at this point and it is helpful to
+explain these terms and how they relate to each other here. R will do
+exactly what you tell it to, so it helps to know how it thinks. The R
+environment runs almost entirely by creating \emph{objects} and applying
+\emph{functions} to them. Like we experienced above, \emph{functions}
+make things happen. In order for R to do things with an object, it has
+to know that it exists.
+
+We could use ``base'' above because the citation() is already a part of
+R and knows where to find it (its always an object). Let's learn how to
+create an object.
 
 All coding languages run on \emph{syntax} (rules for combining things
-for communication). Here's some key symbols in R syntax.
+for communication). Here's some key symbols in R syntax.\\
+\strut \\
 
 \begin{longtable}[]{@{}rr@{}}
 \toprule()
@@ -310,19 +335,45 @@ Syntax & Action \\
 \midrule()
 \endhead
 = & equals sign is used to assign data to objects \\
-\textless- & arrow is the same as equals sign, assigns data to
+\textless- & arrow-dash is the same as equals sign, assigns data to
 objects \\
 \# & hashes designate non-coding regions, used to annotate code \\
 \bottomrule()
 \end{longtable}
+
+You can copy-paste the entire section of code below and run it. Another
+nice thing about R is that you can submit a whole list of commands at
+once, as long as each of these commands and function are entered
+correctly. Because my annotations are preceded by a hash ``\#'', they're
+not read as commands. As for whether one should use ``='' or
+``\textless-'', there are trade-offs to either choice. I use ``=''
+becauese it requires typing fewer characters.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Here, we use "=" to create an object called "x" and assign it the value of 5.}
 
 \NormalTok{x }\OtherTok{=} \DecValTok{5}
+
+\CommentTok{\# We can also use "\textless{}{-}" to create another object called "y" and assign it the value of 6.}
+
+\NormalTok{y }\OtherTok{\textless{}{-}} \DecValTok{6}
 \end{Highlighting}
 \end{Shaded}
+
+\hfill\break
+
+Once you run the above code, you may notice that basically nothing
+happened. R happily ran your commands and creates an object named ``x''
+with a value of 5 and an object ``y'' with a value of 6. You didn't tell
+R to give you any output, so none is given. Type ``x'' in the command
+line and then hit ``enter''. Do the same for ``y''. R should return the
+values each time after you hit ``enter''. This is rudimentary, but you
+are \emph{coding} now. Also, now that we've experienced what R is like,
+we can gain a better appreciation for what R Studio does for us.
+
+\hfill\break
+\hfill\break
 
 \hypertarget{installing-r-studio}{%
 \paragraph{Installing R Studio}\label{installing-r-studio}}
@@ -335,7 +386,7 @@ version.
 
 \href{https://posit.co/downloads/}{\includegraphics[width=0.25\textwidth,height=\textheight]{https://d33wubrfki0l68.cloudfront.net/57299a1dcd979c623325f11bf5e5ce60f3d4eb00/e4602/wp-content/uploads/2018/10/black.png}}
 
-The webpage should detect what machine you're using and suggest the
+The webpage should detect what sort of OS you're using and suggest the
 correct version of R Studio. If it does not, there are other download
 options below which correspond to various OS and OS versions. You will
 notice that the webpage also tells you to install R (which we've already
@@ -350,14 +401,107 @@ done), so you can skip to ``2'' and download R Studio.
 \caption{**Figure 5.** R Studio Download Page.}\label{fig:sceenshot of R Studio Download page}
 \end{figure}
 
-\hypertarget{including-plots}{%
-\subsection{Including Plots}\label{including-plots}}
+\hfill\break
+\hfill\break
 
-You can also embed plots, for example:
+You'll get either a .exe or a .pkg file when you download R Studio
+(depending on OS) and you can then run this file and follow the prompts
+from the installation wizard. Windows users will find R Studio in their
+program files while masOS users will have to move the R Studio app into
+the Applications folder. Make a shortcut to your desktop (Windows) or
+put the app in your taskbar (macOS) for easy access.
 
-\includegraphics{APD_Rbasics_files/figure-latex/pressure-1.pdf}
+Now, let's open R Studio and take a look at it. Double-click on the
+icon.
 
-Note that the \texttt{echo\ =\ FALSE} parameter was added to the code
-chunk to prevent printing of the R code that generated the plot.
+\hfill\break
+\hfill\break
+
+You should have three panes open in the window, as shown in Fig 6.
+above. The leftmost should look familiar. It is the R console! This is
+where you'll enter commands to make R do things. It also shows you some
+of the same information, such as the location of the working directory.
+If you look carefully, this pane has two tabs: ``Console'' and ``Jobs''.
+Stick with the console for now, but this area of the window is dedicated
+to what R is \emph{doing}.
+
+On the right, the top pane also has tabs: ``Environment'', ``History'',
+``Connections'', ``Git'', and ``Tutorial''. We will rely on
+``Environment'' and ``History'' more than the others for this tutorial.
+The ``Environment'' allows us to see inside R's brain. Let's take a
+quick look at how this works by entering the same commands from our
+first use of base R. You can type these commands manually or copy paste
+them.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{=} \DecValTok{5}
+\NormalTok{y }\OtherTok{=} \DecValTok{6}
+\end{Highlighting}
+\end{Shaded}
+
+\hfill\break
+
+After you've run both commands (after hitting ``enter''), you should see
+the environment update to include the new objects you've made. Base R
+didn't show you anything, but we demonstrated that R remembered these
+objects and recalled their values. Here, we can see what R knows.\\
+
+\begin{figure}
+
+{\centering \includegraphics{images/Rst_env} 
+
+}
+
+\caption{**Figure 7.** R Studio showing updated Environment pane after creating objects.}\label{fig:screenshot of Rstudio step 1}
+\end{figure}
+
+\hfill\break
+\hfill\break
+
+The bottom-right pane has several file-navigation related tabs:
+``Files'', ``Plots'', ``Packages'', ``Help'', and ``Viewer''. We will
+make the most use of ``Files'', ``Plots'', and ``Help'' during the
+workshop. It defaults to ``Files'' when we open R Studio. It will show
+you the contents of the working directory as well as the file path to
+the working directory (below the options - ``New Folder'', ``Delete'',
+``Rename'', ``More''). This can be really helpful when troubleshooting
+your code. Remember, R has to be able to find your data. In order to
+help it do so, you have to know where R thinks it is. R always thinks it
+is in the working directory and this pane (plus the top of the Console)
+will help you figure out where R thinks that working directory is.
+
+Another helpful pane in the bottom-right is the plots pane. R Studio
+saves all of the plots that you make here. Because we've already defined
+two objects, let's plot them and see what happens.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(x, y)}
+\end{Highlighting}
+\end{Shaded}
+
+\hfill\break
+\hfill\break
+
+This should create a plot in this pane, looking something like this.
+
+\begin{figure}
+
+{\centering \includegraphics{images/Rst_plt} 
+
+}
+
+\caption{**Figure 8.** R Studio window showing plot of values of x and y.}\label{fig:plotting results screenshot}
+\end{figure}
+
+\hfill\break
+\hfill\break
+
+\textbf{Excellent!} You've already run your first function, defined
+objects, and then plotted them. This is basically all that R does, but
+we can create objects with multiple dimensions (vectors, matrices,
+arrays!) and run complicated functions to evaluate, synthesize, and plot
+this information.
 
 \end{document}
