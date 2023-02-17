@@ -3,10 +3,10 @@ title: "R Basics for Paleoecologists"
 author: "C.A. Kiahtipes"
 date: "2/14/2023"
 output:
+  html_document: default
+  word_document: default
   pdf_document:
     pandoc_args: ["--extract-media","."]
-  word_document: default
-  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -64,7 +64,14 @@ knitr::include_graphics("images/cran_download.png")
 
 Double-click on this file and follow the instructions from your machine's prompts for installation. This differs slightly between each operating system and the version of the operating system you're using.
 
-If you're using macOS, you will be directed to a slightly different looking page with multiple download options. Here, you much choose a package based on the version of the macOS you're using. If you're using OS 11 or greater (Apple names their updates, so this one is 'Big Sur') select the top option. If you're using versions before this ('High Sierra'), then download the second option.
+If you're using macOS, you will be directed to a slightly different looking page with multiple download options.  
+
+Here, you much choose a package based on the version of the macOS you're using as well as the kind of processor in your machine. 
+
+If you're using macOS 11 or greater (Apple names their updates, so this one is 'Big Sur') AND your machine uses an M1 chip, then select the top option (Fig 3:A). If you're using versions before this ('High Sierra') and have an Intel 64-bit chip, then download the second option (Fig 3:B).  
+
+Don't know what kind of chip is in your mac? You can quickly find out by clicking the apple icon at the top right of your screen, then selecting "about this mac". You should get a window listing the macOS version, kind of machine of you're using, and details about the processor and memory. Newer macs list the processor as the "Chip". You can get more detailed instructions for investigating your hardware from [Apple's support page](https://support.apple.com/guide/system-information/welcome/11.0/mac).  
+\
 
 ```{r screenshot of macOS DL options, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 3.** cran.R-project macOS download options"}
 
@@ -81,7 +88,7 @@ For windows users, R will install to your "program files" folder. For macOS user
 
 **Second**, let's open up R to make sure that it works and to look at some important features that will help you later on. When you open R, you only get a text window called the console. This is where all of the action happens and as soon as you open R, you're given some basic, but important information.
 
-```{r screenshot of R console running solo, echo=FALSE, fig.align = 'center', fig.cap = "**Figure 4.** R Console with annotations for working directory, version, and citation instructions."}
+```{r screenshot of R console running solo, echo=FALSE, fig.align = 'center', fig.cap = "**Figure 4.** R Console with annotations for: A, working directory; B,  version; C, citation instructions; and D, the command line."}
 
 knitr::include_graphics("images/R_console.png")
 
@@ -89,10 +96,10 @@ knitr::include_graphics("images/R_console.png")
 \
 
 Note the following:
--the *working directory* is the folder where R looks when it goes to find or write things.
--the software version is at the top of the initialization text, this information is important for citations.
--the intialization text includes instructions for getting information about licensing, help, and for citing R.
--the *command line* is the line starting with ">", which is where you politely ask R to do things for you.
+-the *working directory* is the folder where R looks when it goes to find or write things (Fig. 4:A).
+-the software version is at the top of the initialization text, this information is important for citations (Fig. 4:B).
+-the intialization text includes instructions for getting information about licensing, help, and for citing R (Fig. 4:C).
+-the *command line* is the line starting with ">", which is where you politely ask R to do things for you (Fig. 4:D).
 
 
 We can actually try out a bit of coding at this point. Type the code below in your R console and hit "enter". You can also copy-paste from this document into the console as well. 
@@ -162,11 +169,14 @@ Once you run the above code, you may notice that basically nothing happened. R h
 
 #### Installing R Studio
 
-**Third**, you will need to [download R Studio](https://posit.co/download/rstudio-desktop/) and install it. R Studio is available as a "free version" and a "professional" version. The links here go directly to the free version. 
+**Third**, you will need to [download R Studio](https://posit.co/download/rstudio-desktop/) and install it. R Studio is available as a "free version" and a "professional" version. The links here go directly to the free version.  
+\
 
 [![R Studio logo](https://d33wubrfki0l68.cloudfront.net/57299a1dcd979c623325f11bf5e5ce60f3d4eb00/e4602/wp-content/uploads/2018/10/black.png){width=25%}](https://posit.co/downloads/)
+\
 
-The webpage should detect what sort of OS you're using and suggest the correct version of R Studio. If it does not, there are other download options below which correspond to various OS and OS versions. You will notice that the webpage also tells you to install R (which we've already done), so you can skip to "2" and download R Studio.
+The webpage should detect what sort of OS you're using and suggest the correct version of R Studio. If it does not, there are other download options below which correspond to various OS types and their individual versions. You will notice that the webpage also tells you to install R (which we've already done), so you can skip to "2" and download R Studio. 
+\
 
 ```{r sceenshot of R Studio Download page, echo = FALSE, fig.align = 'center', fig.cap= "**Figure 5.** R Studio Download Page."}
 
@@ -180,15 +190,19 @@ You'll get either a .exe or a .pkg file when you download R Studio (depending on
 
 Now, let's open R Studio and take a look at it. Double-click on the icon.
 
-```{r screenshot of blank R Studio, echo=FALSE, fig.align = 'center', fig.cap= "**Figure 6.** R Studio window."}
+```{r screenshot of blank R Studio, echo=FALSE, fig.align = 'center', fig.cap= "**Figure 6.** R Studio window with annotated console pane: A, working directory; B, R version; C, citation info; and D, the command line."}
+
+knitr::include_graphics("images/R_studio_basic.png")
 
 ```
 \
 \
 
-You should have three panes open in the window, as shown in Fig 6. above. The leftmost should look familiar. It is the R console! This is where you'll enter commands to make R do things. It also shows you some of the same information, such as the location of the working directory. If you look carefully, this pane has two tabs: "Console" and "Jobs". Stick with the console for now, but this area of the window is dedicated to what R is *doing*.  
+You should have three panes open in the window, as shown in Fig 6. above. The leftmost should look familiar. It is the R console! This is where you'll enter commands to make R do things. It also shows you some of the same information, such as the location of the working directory (Fig 6:A) and command line (Fig 6:D). You may notice other tabs behind the console titled "Terminal" and "Background jobs". Stick with the console for now, but this area of the window is dedicated to what R is *doing*.  
 
-On the right, the top pane also has tabs: "Environment", "History", "Connections", "Git", and "Tutorial". We will rely on "Environment" and "History" more than the others for this tutorial. The "Environment" allows us to see inside R's brain. Let's take a quick look at how this works by entering the same commands from our first use of base R. You can type these commands manually or copy paste them. 
+On the right, the top pane also has tabs: "Environment" (Fig 6:E), "History" (Fig 6:F), "Connections" (Fig 6:G), and "Tutorial" (Fig 6:G). We will rely on "Environment" and "History" more than the others for this tutorial. 
+
+The "Environment" allows us to see inside R's brain. Let's take a quick look at how this works by entering the same commands from our first use of base R. You can type these commands manually or copy paste them. 
 
 ```{r simple objects in R Studio, echo = TRUE}
 
@@ -203,15 +217,24 @@ After you've run both commands (after hitting "enter"), you should see the envir
 
 ```{r screenshot of Rstudio step 1, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 7.** R Studio showing updated Environment pane after creating objects."}
 
-knitr::include_graphics("images/Rst_env.png")
+knitr::include_graphics("images/R_studio_p2.png")
 
 ```
 \
 \
 
-The bottom-right pane has several file-navigation related tabs: "Files", "Plots", "Packages", "Help", and "Viewer". We will make the most use of "Files", "Plots", and "Help" during the workshop. It defaults to "Files" when we open R Studio. It will show you the contents of the working directory as well as the file path to the working directory (below the options - "New Folder", "Delete", "Rename", "More"). This can be really helpful when troubleshooting your code. Remember, R has to be able to find your data. In order to help it do so, you have to know where R thinks it is. R always thinks it is in the working directory and this pane (plus the top of the Console) will help you figure out where R thinks that working directory is.  
+Now click on the "History" tab. Here is where you can find all of the past commands you have given R. This can be helpful for troubleshooting problems. It should look like Figure 8. 
 
-Another helpful pane in the bottom-right is the plots pane. R Studio saves all of the plots that you make here. Because we've already defined two objects, let's plot them and see what happens.
+```{r screenshot of R studio history, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 8.** Screenshot of R studio window with history tab selected."}
+
+knitr::include_graphics("images/R_studio_p3.png")
+
+```
+
+
+The bottom-right pane has several file-navigation related tabs: "Files" (Fig 6:I), "Plots" (Fig 6:J), "Packages" (Fig 6:K), and "Help" (Fig 6:L). There's other tabs here, but we will make the most use of "Files", "Plots", and "Help" during the workshop. "Files" shows you the contents of the working directory as well as the file path to the working directory (below the options - "New Folder", "Delete", "Rename", "More"). This can be really helpful when troubleshooting your code. Remember, R has to be able to find your data. In order to help it do so, you have to know where R thinks it is. R always thinks it is in the working directory and this pane (plus the top of the Console) will help you figure out where R thinks that working directory is.  
+
+Another helpful pane in the bottom-right is the "Plots" pane. R Studio saves all of the plots that you make here. Because we've already defined two objects, let's plot them and see what happens.
 
 ```{r plotting x and y objects, echo = TRUE, eval = FALSE}
 
@@ -223,17 +246,146 @@ plot(x, y)
 
 This should create a plot in this pane, looking something like this.
 
-```{r plotting results screenshot, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 8.** R Studio window showing plot of values of x and y."}
+```{r plotting results screenshot, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 9.** R Studio window showing plot of values of x and y."}
 
-knitr::include_graphics("images/Rst_plt.png")
+knitr::include_graphics("images/R_studio_p5.png")
 
 ```
 \
 \
 
-**Excellent!** You've already run your first function, defined objects, and then plotted them. This is basically all that R does, but we can create objects with multiple dimensions (vectors, matrices, arrays!) and run complicated functions to evaluate, synthesize, and plot this information.
+**Excellent!** You've already run your first function, defined objects, and then plotted them. This is basically all that R does, but we can create objects with multiple dimensions (vectors, matrices, arrays!) and run complicated functions to evaluate, synthesize, and plot this information.  
+\
+\
 
+### Setting up R Markdown (Bonus)
+\
+At the end of the workshop, we will apply some of our R skills to make an R Markdown document. Markdown is *another* coding language, but it is native to R Studio and is helpful for presenting results. Let's set up an R Markdown document and introduce the 4th pane in the R Studio window. At the top right of the R Studio window (not within the panes!) select the "new file" icon (plus sign over a piece of paper) and select the "R Markdown" option.
+\
 
+```{r make an R markdown document, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 10.** Screenshot of opening the 'new file' option and selecting R Markdown document"}
+
+knitr::include_graphics("images/R_studio_Rmd1.PNG")
+
+```
+\
+\
+
+You will be prompted to download dependencies for R Markdown. Go ahead and select "yes". 
+
+```{r download R markdown dependencies, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 11.** Screenshot of installation prompt."}
+
+knitr::include_graphics("images/R_studio_Rmd2.PNG")
+
+```
+\
+\
+
+R Studio will automatically download and install packages necessary for using R Markdown.  
+
+\
+```{r R Studio downloading dependencies, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 12.** Screenshot of installation progress."}
+
+knitr::include_graphics("images/R_studio_Rmd3.PNG")
+
+```
+\
+\
+
+R Markdown will prompt you to give your document a title and to list authors. You can enter any information you want here. Add your name and a provisional title. Make sure the default output is "html". Outputting to .pdf requires some extra steps (installing LaTex) that can be addressed later. Html output is preferable because it doesn't have page breaks and it can be printed directly from the web browser.
+
+\
+```{r R Markdown document info, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 13.** Screenshot of R Markdown initial screen."}
+
+knitr::include_graphics("images/R_studio_Rmd4.PNG")
+
+```
+\
+\
+
+This should open an R markdown document as the fourth pane of the R Studio interface (above the Console). There are a range of document types that you can open, but the ones we will be using are R scripts and R Markdown.
+
+\
+```{r R Markdown basic document, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 14.** Screenshot of intitial R markdown document."}
+
+knitr::include_graphics("images/R_studio_Rmd5.PNG")
+
+```
+\
+\
+
+R Markdown documents open with some information already entered for you. We will discuss more in the workshop on how to make use of these general features, but you can already use the "knit" command to convert this Markdown document to html.
+
+\
+```{r R Markdown knit document, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 15.** Screenshot of save prompt for R markdown document."}
+
+knitr::include_graphics("images/R_studio_Rmd6.PNG")
+
+```
+\
+\
+
+The first time you do this, you'll have to save the R Markdown (.Rmd) document somewhere. At this point, we are not worrying about file management, so feel free to save it to your "Documents" folder or wherever you prefer.  
+\
+
+```{r R Markdown save screenshot, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 16.** Screenshot of save option for R markdown document."}
+
+knitr::include_graphics("images/R_studio_Rmd7.PNG")
+
+```
+\
+\
+
+You should get output that looks like this. R markdown converts the document's code into html and outputs the R commands as well as the markdown text. We will use this basic structure to build documents usable for publicatios and project management.
+
+\
+```{r screenshot of html output, echo = FALSE, fig.align = 'center', fig.cap = "**Figure 17.** Screenshot of html output from R markdown document."}
+
+knitr::include_graphics("images/R_studio_Rmd8.PNG")
+
+```
+\
+\
+
+At last, you have installed and initialized all of the basic tools we will use for the first APD workshop. There are a lot of open-access resources to help you get familiar with R Studio and R Markdown. Please check these out below. 
+\
+
+## Web Resources
+\
+\
+
+[R Studio provides resources for beginners](https://education.rstudio.com/learn/beginner/) that are free to use.
+\
+
+[datacamp also provides some basic instructions](https://www.datacamp.com/tutorial/r-studio-tutorial) for beginners that may be helpful.
+\
+
+[James Scott's *Data Science in R: A Gentle Introduction*](https://bookdown.org/jgscott/DSGI/) is another good resource that covers much of the same material.  
+\
+
+### Troubleshooting
+\
+\
+
+Everyone encounters problems along the way and troubleshooting on the web can be helpful. Here's some suggestions for how to get better search results:
+
+-Include software in search terms "R Studio, installation problems".  
+-Include hardware in search terms "R Studio, installation problems, Windows 7".  
+-Include names of key websites in search terms "R Studio, installation problems, Windows 7, stack overflow".  
+-Include error messages in search terms "R Studio, "error: cannot compile", Windows 7".  
+
+\
+
+If you are encountering a problem, it is likely that someone else has also had this issue. Google is useful, but you may find sites like [stack overflow](https://stackoverflow.com/) to be really useful.
+
+### Cheat Sheets
+
+There's lots of cheat sheets that provide references for syntax, commands, and functions in R Studio and R Markdown. They're handy and strongly recommended for quick reference.
+
+[R Studio cheat sheets](https://posit.co/resources/cheatsheets/)
+\
+
+[R Markdown cheat sheet](https://d33wubrfki0l68.cloudfront.net/374f4c769f97c4ded7300d521eb59b24168a7261/c72ad/lesson-images/cheatsheets-1-cheatsheet.png)
 
 
 
