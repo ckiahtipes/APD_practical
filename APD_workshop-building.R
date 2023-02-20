@@ -310,5 +310,36 @@ cov(FKEpct$Alchornea, FKEpct$Nymphaea)
 
 #Other big topics that would be useful
   #Reading and saving data.
-  #Subsetting data.
-  #Summarizing by ecological data.
+
+MBALA = read.csv("cores/MBALA.csv", header = TRUE)
+
+MBALA_pollen = MBALA[7:nrow(MBALA), 6:ncol(MBALA)]
+
+MBALA_taxa = MBALA[7:nrow(MBALA),1]
+
+tMBALA = data.frame(t(MBALA_pollen))
+
+i = c(1:ncol(tMBALA))
+
+tMBALA = as.data.frame(apply(tMBALA, 2, as.numeric))
+
+tMBALA[is.na(tMBALA)] = 0
+
+colnames(tMBALA) = MBALA_taxa
+
+MBALA_pct = calculate_percent(tMBALA)
+
+#Subsetting data.
+#Summarizing by ecological data.
+
+
+
+
+
+
+
+
+
+
+
+

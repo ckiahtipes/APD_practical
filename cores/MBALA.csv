@@ -1,0 +1,222 @@
+"name","group","element","units","context","S477901","S477911","S477923","S477932","S477941","S477904","S477913","S477921","S477931","S477942","S477908","S477915","S477926","S477935","S477900","S477910","S477920","S477930","S477940","S477902","S477912","S477922","S477933","S477943","S477903","S477916","S477924","S477934","S477944","S477905","S477914","S477925","S477936","S477906","S477917","S477929","S477938","S477907","S477918","S477928","S477939","S477909","S477919","S477927","S477937"
+AnalysisUnitName,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Depth,,,,,37.7,136.2,316,420.7,536,88,154.7,301.4,405.5,549.5,105.7,167.1,330.7,459.2,12.2,123.5,267.5,392,529.3,0.2,141,279.3,438,566.9,25.2,201,345.5,450.8,582.5,46,183.2,350.5,487,62.3,215.5,380,493,74.5,236.6,369.4,513.5,118.2,252,353,474.8
+Thickness,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sample Name,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sample ID,,,,,477901,477911,477923,477932,477941,477904,477913,477921,477931,477942,477908,477915,477926,477935,477900,477910,477920,477930,477940,477902,477912,477922,477933,477943,477903,477916,477924,477934,477944,477905,477914,477925,477936,477906,477917,477929,477938,477907,477918,477928,477939,477909,477919,477927,477937
+AP1,Calibrated radiocarbon years BP,,,,--/339/--,--/1303/--,--/3346/--,--/4706/--,--/6348/--,--/817/--,--/1496/--,--/3166/--,--/4501/--,--/6550/--,--/993/--,--/1628/--,--/3529/--,--/5237/--,--/108/--,--/1172/--,--/2759/--,--/4321/--,--/6248/--,--/2/--,--/1352/--,--/2899/--,--/4942/--,--/6814/--,--/225/--,--/1997/--,--/3717/--,--/5120/--,--/7053/--,--/416/--,--/1801/--,--/3780/--,--/5631/--,--/570/--,--/2158/--,--/4162/--,--/5718/--,--/686/--,--/2398/--,--/4024/--,--/6015/--,--/1118/--,--/2576/--,--/3812/--,--/5457/--
+Acacia,TRSH,pollen,NISP,,1,,1,,1,,1,,,1,,,,,,,1,1,,,,1,,,,,,,,2,,,,,,,,1,,,,,,1,
+Acalypha,UPHE,pollen,NISP,,,,,2,,,,,,,,,2,,,,,,,,,,3,,,,,,,1,,1,,1,,,2,,,,1,,,,
+Achyranthes-type (A. aspera),UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,1,,,1,,,,,,,,,,,,,,,,,,
+Adansonia digitata,TRSH,pollen,NISP,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Adenia venenata-type,TRSH,pollen,NISP,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Aerva-type (A. lanata),UPHE,pollen,NISP,,,,,,,,1,,,,,,,,,,,,,,,,1,,,,,,,2,1,1,,,,,,2,,,,,,,
+Aeschynomene baumii-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,1
+Aidia-type (A. micrantha),TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,
+Alangium chinense,TRSH,pollen,NISP,,,,,,1,,,,,1,,,,,,,,,3,,,,1,2,,,,,,,,,,,,,,,,,3,,,,
+Albizia-type,TRSH,pollen,NISP,,1,,1,,1,1,,,,,,,,,1,,,,,,1,,,1,,,,1,,,,1,,,,2,2,,,,,,,,1
+Alchemilla,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,
+Alchornea,TRSH,pollen,NISP,,6,7,72,78,117,9,15,65,94,142,4,6,59,72,5,7,22,72,102,1,11,26,80,133,7,13,77,87,193,6,14,76,85,10,4,64,73,7,5,85,92,7,4,89,63
+Allophylus,TRSH,pollen,NISP,,,,,2,,,,1,,,,,,1,,,,1,,,,,,,,2,,,1,1,,,,,,,1,,,,,,,,
+Alstonia-type (A. boonei),TRSH,pollen,NISP,,,,,2,1,1,,,,3,,,1,,,,,1,1,,,1,1,,,,1,,1,,,,1,,,1,,,,,,,1,2,
+Amaranthaceae undiff.,UPHE,pollen,NISP,,1,,,,,1,1,1,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,1,,,
+Anagallis,UPHE,pollen,NISP,,,,,,,,,,,1,,,,,,,,1,,,,,,,,,2,,2,,,,,,,,,,,,,,,,
+Anogeissus-type (A. leiocarpa),TRSH,pollen,NISP,,,,1,,,,1,,,,1,,2,2,1,,,,,,,,2,1,2,,,,,1,1,3,,,1,2,1,,,,,,,1,
+Anthocleista,TRSH,pollen,NISP,,,,,1,,,,,,,,,,,,,,3,,,,1,,,,,,,1,,,,,,,,,,,,,,,,
+Anthospermum,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Anthostema-type (A. senegalense),TRSH,pollen,NISP,,,,2,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,
+Antidesma-type (A. rufescens),TRSH,pollen,NISP,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,2,,,,,,1,,,1,,,,,
+Antrocaryon-type,TRSH,pollen,NISP,,,,,,2,,,1,3,2,1,,,2,,,6,1,2,,,1,1,1,1,,4,,1,,,4,,,,1,4,,,4,3,,,,1
+Apiaceae undiff.,UPHE,pollen,NISP,,2,,1,,,,,,,,,,,,1,,,1,,,,,,,2,,,1,,,,1,,,,,1,,,,,,1,,
+Apocynaceae undiff.,UPHE,pollen,NISP,,,,,,,1,,,,,,,,3,,,,,,,,,,,,,,,1,,,2,,,,3,,,,,3,,,,3
+Argomuellera-type (A. macrophylla),UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,
+Argyrella-type (A. canescens),TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,2,,
+Asteraceae undiff.,UPHE,pollen,NISP,,4,8,,8,3,5,7,7,5,3,9,22,6,3,5,10,6,11,1,,5,9,6,1,16,12,10,3,4,5,19,5,5,4,3,2,2,10,4,4,2,12,6,8,1
+Begonia,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,
+Bersama abyssinica-type,TRSH,pollen,NISP,,,,,,,,,,2,,,,1,,,,,,1,,,1,1,,,,,,,,,,,,1,,,,,,,,,,
+Blighia sapida-type,TRSH,pollen,NISP,,,,,,,,2,1,,2,,,1,1,1,3,,,1,,1,,,,,,1,,,,,,1,,,1,1,,1,,,,,,3
+Bombax costatum-type,TRSH,pollen,NISP,,,,,,,,,,,2,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Borassus-type (B. aethiopum),PALM,pollen,NISP,,,,,,,,3,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Brassicaceae undiff.,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,
+Bridelia ferruginea-type,TRSH,pollen,NISP,,1,1,2,1,,,7,5,3,2,,1,2,3,2,5,5,1,1,,,1,1,,1,,3,5,1,3,6,1,2,2,2,1,,1,1,,,2,3,3,
+Caesalpinioideae undiff.,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,
+Campylospermum,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,,,,,
+Carapa-type (C. procera),TRSH,pollen,NISP,,,,4,4,16,,,16,5,6,,,5,3,,,3,7,7,,,5,8,1,,,2,3,3,,,8,9,,,10,2,,,13,4,,,10,14
+Ceiba pentandra,TRSH,pollen,NISP,,,,,1,,,,,1,1,,,1,,,,1,,,,1,,,,,,,,1,,,,,,3,2,1,,1,,,,,,
+Celastraceae undiff.,TRSH,pollen,NISP,,,,,1,,,,1,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,1,,,2,
+Celosia-type (C. trigyna),UPHE,pollen,NISP,,,1,,,,,,,,,1,,,,,,,,,,,,,1,,,,,,,1,,,2,,,,,,,,,,,
+Celtis,TRSH,pollen,NISP,,1,2,3,10,7,,2,2,7,3,1,,7,12,1,5,2,8,3,2,1,7,21,4,1,5,16,10,19,4,,5,8,,2,5,16,,1,15,4,,1,6,7
+Cichorieae undiff.,UPHE,pollen,NISP,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,
+Cissampelos-type (C. mucronata),TRSH,pollen,NISP,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cissus phymatocarpa-type,TRSH,pollen,NISP,,,,,,,1,,,,,,,,,,1,,,,,1,,,,,,,,,,,2,,,,,,,,,,,,,2
+Clausena anisata,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cleistanthus-type (C. libericus),TRSH,pollen,NISP,,,,,3,,,,,,,,,,,,,,,,,1,,,,,,,1,,,,1,,,,2,,,,1,,,,,
+Clematis-type,UPHE,pollen,NISP,,,,1,,,,,,,,1,,1,,3,1,,1,,1,1,,1,,,1,,,,,,1,1,,,2,,1,,,1,1,,1,
+Combretaceae undiff.,TRSH,pollen,NISP,,1,2,,1,,5,1,2,,,2,1,,,3,4,2,,1,3,,,4,1,2,,5,1,1,1,,1,4,5,,,,,2,3,2,,5,1,3
+Combretaceae/Melastomataceae undiff.,TRSH,pollen,NISP,,,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,1,,3,,,,,1,,,,,
+Combretum molle-type,TRSH,pollen,NISP,,8,2,3,,,1,4,12,4,1,2,4,4,1,3,,2,13,,6,3,4,3,,4,2,,2,,3,6,4,,3,,5,1,1,2,4,,6,,4,
+Commelina benghalensis-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,1,,1,,,,,,,,1,,,,,,,1,,,,,,1,,,,2,,,
+Commiphora africana-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,1,,,,,,,,,,,
+Cordia platythyrsa-type,TRSH,pollen,NISP,,,,,,5,,,1,,,,,,1,,,,,1,,,,,3,,,,1,5,,,,,,,,,,,,,,,,
+Crinum natans-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,
+Croton-type,TRSH,pollen,NISP,,,2,2,,,,,5,,1,,,,1,,,,1,6,,,,,1,,,,,1,,,2,,,,,,,,,,,,,
+Cucurbitaceae undiff.,UPHE,pollen,NISP,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cussonia arborea-type,TRSH,pollen,NISP,,,3,2,,4,,2,1,4,,2,1,1,1,,3,,1,2,1,1,1,,,1,,,2,,,6,1,,1,3,,,2,1,3,1,1,4,,
+Cyathea manniana-type,VACR,spore,NISP,,,,,,,1,,1,,1,,,1,,,1,,,1,,,,,,,,1,3,1,,,2,,,,3,1,,,,,,,2,1
+Cyathula-type (C. orthacantha),UPHE,pollen,NISP,,,,,,2,,1,,,,,,,,1,,1,,,,,,1,,,,,,1,,,1,,,,1,,,,1,1,,,,
+Cyperaceae undiff.,UPHE,pollen,NISP,,68,19,15,24,,32,35,30,20,16,43,38,11,20,86,58,49,23,8,101,52,37,13,7,60,42,33,15,19,117,54,17,14,79,33,25,11,97,49,21,10,47,66,16,20
+Cyphostemma-type,TRSH,pollen,NISP,,,,2,,7,,,,1,,,,5,1,,,,,,,,2,2,,,,,2,,,,,1,,,,,,,,,,2,1,
+Dacryodes-type,TRSH,pollen,NISP,,,,1,,,1,,,2,,,,,,,,,,,,,,,,,,,2,,,,,1,,,,,,,,,,,,
+Detarium senegalense-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,
+Dichrostachys cinerea-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1
+Dioscorea dumetorum-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,3,,,,,,1,1,,,,,,,1,,,,,,,,
+Diospyros,TRSH,pollen,NISP,,,2,4,2,5,,,2,4,4,,,2,1,,,,3,3,,,2,3,5,,,4,,4,,,3,4,,,2,2,,,5,3,1,1,5,3
+Dodonaea viscosa-type,TRSH,pollen,NISP,,,,,,1,,,,,,,,,,,2,,,,,,,,,,,,,,,,,,1,,1,,,,2,,,,1,1
+Dombeya-type,TRSH,pollen,NISP,,,,,,,,,,2,,,,,,,,1,1,,,,1,1,1,,,1,,,,,2,,,,1,,,,2,1,,2,2,
+Elaeis guineensis,PALM,pollen,NISP,,,,,,,,1,,,,,,1,,,,,,,1,,,,,,1,,,,,,,,,1,,,2,,,,,,,
+Elaeophorbia-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,
+Entada-type,TRSH,pollen,NISP,,2,3,,2,1,,,,1,,,,1,,1,,,,4,4,,2,1,,2,,,,,,1,2,,1,,1,2,,,1,4,,2,,1
+Ericaceae undiff.,TRSH,pollen,NISP,,,,,,,,,,,,,,1,,,,,1,,,,,,,,,,,,,,,,,,1,1,,,1,1,,,,
+Eriocaulaceae,AQVP,pollen,NISP,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Euphorbiaceae undiff.,UPHE,pollen,NISP,,,,,,,,,,1,,,,,,,,,,,,,,,1,,,,,1,,,,,,,,,,,,1,,,,
+Fabaceae undiff.,UPHE,pollen,NISP,,1,,,,,,,1,,,,,,,,,,1,,,,,,,,,,,,,,,1,,1,,,,,,,,,,
+Faidherbia albida,TRSH,pollen,NISP,,,,,,,,,,,1,,,,,,,,,1,,,,,,,,,,,,,1,,,,,,,,,,,,,
+Ficus,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,2,,,1,,,,,,,,,,,,,,,,,,,
+Flabellariopsis acuminata,TRSH,pollen,NISP,,,1,1,1,3,,,1,2,2,,,,1,,,,,3,,1,1,,2,,,1,,,,,2,,,1,,1,,,1,,,,1,
+Flueggea virosa-type,TRSH,pollen,NISP,,,,1,,3,,,,,,,,2,5,,,2,,3,,,,3,9,1,,,,3,1,,4,,2,,,1,,,,3,,,,6
+Funtumia-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,
+Galium-type,UPHE,pollen,NISP,,1,,,,,,,,2,,,,,,,,,1,,,,,1,,,,,,,,,,,,,,,,,,,,,,
+Ganophyllum-type (G. giganteum),TRSH,pollen,NISP,,,,,1,2,,,,,,,,,,,,,,,,,,,,,,1,,1,,,1,1,,,,,,,,,,,,
+Garcinia quadrifaria-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,
+Garcinia staudtii-type,TRSH,pollen,NISP,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gardenieae,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,
+Guizotia-type (G. abyssinica),UPHE,pollen,NISP,,,,,,,,,,,,1,1,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hagenia abyssinica,TRSH,pollen,NISP,,,,,1,,,,,,,,,,,,,,,1,,,,,,,,,,1,,,,,,,,1,,,,,,,,
+Harungana madagascariensis-type,TRSH,pollen,NISP,,,,,,1,,,,,,,,,,,,,,,,,,,,,1,,,,1,,,,,,,,,,,,2,,,
+Holoptelea grandis,TRSH,pollen,NISP,,,,1,4,1,1,,,2,3,1,,3,,,,2,4,3,,,1,1,,,,3,2,,,,1,1,,,2,1,,,3,1,,1,2,2
+Hydrocotyle mannii-type,AQVP,pollen,NISP,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hygrophila,AQVP,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,
+Hylodendron gabunense,TRSH,pollen,NISP,,,,,1,,,,,,,,1,3,,,,,,,,,,,,,,,,,,,2,,,2,,,,,,,1,,,
+Hymenocardia,TRSH,pollen,NISP,,10,9,11,52,6,7,8,20,24,12,6,4,16,24,7,10,10,31,5,14,8,13,44,2,7,6,9,39,10,20,9,14,7,13,10,34,6,5,6,22,7,11,6,26,12
+Hymenodictyon floribundum-type,TRSH,pollen,NISP,,1,,5,10,2,,,12,15,12,,,10,4,4,3,4,4,2,1,,2,6,2,,2,15,10,6,1,3,16,4,2,3,8,4,,3,10,8,,1,3,7
+Hymenostegia-type,TRSH,pollen,NISP,,,,,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hypoestes-type (H. aristata),UPHE,pollen,NISP,,,,,,,,,1,,,,,,,,,,3,,,,,,,,1,,,1,,,,,,,,,,,,,,,,
+Ilex mitis,TRSH,pollen,NISP,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Impatiens,UPHE,pollen,NISP,,,1,,,,,,,,,,,,,,1,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,
+Indigofera,TRSH,pollen,NISP,,1,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,1
+Irvingia-type (I. gabonensis),TRSH,pollen,NISP,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,
+Isoberlinia-type,TRSH,pollen,NISP,,1,1,1,,,,1,1,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,
+Justicia flava-type,UPHE,pollen,NISP,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kedrostis,UPHE,pollen,NISP,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Keetia gueinzii-type,TRSH,pollen,NISP,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kigelia africana,TRSH,pollen,NISP,,1,,,,,,,,,,,,,,,1,1,,,,,,,,,,1,,,,,,,,,,,,,,,,,,
+Klaineanthus gaboniae,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,
+Kotschya africana-type,UPHE,pollen,NISP,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lamiaceae undiff.,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,
+Lannea-type,TRSH,pollen,NISP,,2,1,,1,,,1,,,,,,,,,,,,,,,,1,2,,,1,,,,1,,,,,,,,,1,,,,,2
+Lantana-type (L. ukambensis),UPHE,pollen,NISP,,,,,4,,,,,,,,,,2,,,,,3,,,,1,8,,,,2,,,,,,,,,,,,,,,,,1
+Lantana-type (L. viburnoides),UPHE,pollen,NISP,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,5,,,,,,,,,,,1,,,,2,
+Lepidagathis sericea-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,
+Lepisanthes-type (L. senegalensis),TRSH,pollen,NISP,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Leucas-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Limnophyton-type (L. obstusifolium),AQVP,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,1,
+Lophira lanceolata-type,TRSH,pollen,NISP,,2,,,1,,,,,,,,,1,,,,,,,1,,2,,1,,,,,2,1,,,,,,,,1,,,,2,,,
+Lycopodiaceae undiff.,VACR,spore,NISP,,,,,,,,1,,,,,,,,,,,,1,,,,,,1,,,,,,,,,,,,,1,,1,,,,,
+Lycopodium clavatum-type,VACR,spore,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,
+Lygodium microphyllum,VACR,spore,NISP,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Macaranga-type,TRSH,pollen,NISP,,3,6,8,9,26,1,,6,22,29,7,2,14,8,2,11,8,8,16,,2,8,11,16,3,7,7,14,33,2,2,12,10,1,4,11,14,3,3,18,7,2,6,8,11
+Maesa lanceolata-type,TRSH,pollen,NISP,,,,,3,,,,1,2,1,,,,3,,,,,,,,,,,,,,,,,,1,,,,2,,1,,,1,,,,1
+Mallotus-type (M. oppositifolius),TRSH,pollen,NISP,,1,,6,17,42,,,1,3,25,,,17,15,,,1,15,10,,2,7,22,16,,,,9,6,1,2,21,7,4,1,17,18,1,,12,7,1,,9,8
+Margaritaria discoidea,TRSH,pollen,NISP,,,,,,2,,1,1,4,,,,,,,,,,,,,,1,,,,,1,2,,,,,,,2,,1,,1,2,,,1,1
+Mendoncia,TRSH,pollen,NISP,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Merremia-type (M. hederacea),UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,
+Micrococca-type (M. mercurialis),UPHE,pollen,NISP,,1,,,1,,,,,,3,2,,,,,1,,,,,,,,1,,,3,1,1,,,,,,,,,,,,,,,1,
+Mimosa pigra-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,
+Mitracarpus hirtus,UPHE,pollen,NISP,,,,1,,,,,,,,,,,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,3,,,
+Mitragyna-type (M. inermis),TRSH,pollen,NISP,,,,,,,,,,,3,,,,,,,,,,,1,1,,,,,2,,,,,,,,,,,,,,,,,,
+Monocotyledoneae undiff.,SEED,pollen,NISP,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Monoletes undiff.,PTER,spore,NISP,,23,11,32,19,25,3,10,25,40,20,8,3,26,32,17,26,23,17,19,8,13,29,16,41,20,19,31,31,20,37,23,10,33,8,9,21,18,17,17,28,45,8,15,29,24
+Moraceae undiff.,TRSH,pollen,NISP,,3,,1,,2,,,1,,1,,,2,,,,,2,,,1,1,,,,,,,3,,,2,,,3,,,1,,,,1,1,6,
+Morelia senegalensis,TRSH,pollen,NISP,,,,,,,,1,,3,,,,2,,,,1,,1,,,,2,,,,1,1,,,,,,,,,,,,,1,,4,,
+Myrianthus-type (M. arboreus),TRSH,pollen,NISP,,,,4,,3,3,1,1,,2,,1,,,,,1,2,2,,,,11,2,,,,1,,1,,1,,,,2,1,,,4,,,,,4
+Myrica,TRSH,pollen,NISP,,,,,,,1,,,1,,,,,1,1,,,1,,,,,,,,,,1,,,,,,,,2,,,,,,,,2,1
+Myrtaceae undiff.,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,4,,,,3,,,,,,,1,,,,,
+Neoboutonia-type (N. melleri),TRSH,pollen,NISP,,,1,,1,,,1,,,,,,2,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,
+Nuxia-type (N. congesta),TRSH,pollen,NISP,,2,,,,,,,,,,,,2,,,,,,1,,,,,1,1,,1,,,,,1,1,,,,,,,,,,,,
+Nymphaea lotus-type,AQVP,pollen,NISP,,1,,1,5,1,,2,3,,5,6,2,1,,1,5,5,3,2,6,2,7,6,,1,1,3,4,6,3,6,3,,3,3,2,3,2,,5,7,4,1,3,6
+Olea capensis-type,TRSH,pollen,NISP,,,2,112,65,149,4,1,78,106,120,2,,66,67,1,,2,66,137,,4,5,89,178,1,6,68,86,99,1,2,52,41,1,2,38,83,,,32,111,,2,51,65
+Olea europaea-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,1,,1,,,,,,,,,,,,,1,,,,,,,,,,,,,,
+Onagraceae undiff.,UPHE,pollen,NISP,,,1,,,,,,,,,1,,1,,,,,,,,,,,,,,,,,1,,,,,,,1,,,,,,,,
+Oncinotis-type,UPHE,pollen,NISP,,,,,,,,,,,1,,,,,,,1,,,,,,,,,,,,,,,1,4,,,2,,,,,,,,,
+Pancovia-type (P. bijuga),TRSH,pollen,NISP,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,
+Pandanus,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,1,,,,,,,,,,,,,
+Parinari-type,TRSH,pollen,NISP,,,,1,2,,1,,,2,5,,1,3,,2,,,2,1,,,1,,1,,,1,2,5,,,,1,1,,1,,,,,,,,,1
+Pausinystalia-type (P. macroceras),TRSH,pollen,NISP,,1,1,4,,2,,,,5,,,,,,,,,6,2,,,4,7,,1,1,2,,5,,1,,,,,3,5,,,3,,,2,1,
+Pavetta gardeniifolia-type,TRSH,pollen,NISP,,,,,,,,,,1,,,,,,,,,2,,,,1,,,,,3,,,,,,4,,,,,,,,,,,,
+Persicaria senegalensis-type,UPHE,pollen,NISP,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,
+Phaulopsis-type (P. imbricata),TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,1,,,,,,,,,,,
+Phoenix reclinata-type,PALM,pollen,NISP,,1,,,,,2,,,1,,,2,,1,1,1,,1,,1,1,,,1,,1,,,,,2,1,,,,1,,2,,,,,,,
+Phyllanthus-type (P. boehmi),UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,
+Phyllanthus-type (P. nummulariifolius),TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,
+Piliostigma thonningii-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,2,,,,,,,,
+Poaceae undiff.,UPHE,pollen,NISP,,452,548,235,189,56,664,617,274,172,48,572,509,182,281,740,742,502,192,48,580,531,490,136,43,555,452,216,183,51,579,546,238,241,455,671,208,224,626,486,214,150,698,597,260,227
+Podocarpus,TRSH,pollen,NISP,,,,8,16,25,1,,32,48,45,1,,11,12,1,3,2,47,14,2,1,1,9,30,1,2,33,18,27,,,15,11,,,19,14,,,27,14,,3,20,20
+Polyscias fulva-type,TRSH,pollen,NISP,,1,2,3,3,5,,,4,3,3,,,2,1,,1,1,5,1,,,3,3,6,,,2,2,7,,,5,1,,,1,2,,,3,1,,1,3,6
+Potamogeton thunbergii-type,AQVP,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,
+Protea-type,TRSH,pollen,NISP,,2,,1,,,1,,2,,,,,1,,1,,,2,,,,1,1,,3,,,1,,,,2,,,,,,,,1,,,,,
+Prunus africana-type,TRSH,pollen,NISP,,1,,3,,3,,1,,1,5,,,4,,,1,,1,,,,3,2,,,1,2,1,4,,,1,1,,,4,,1,,,2,,,1,2
+Psydrax-type (P. schimperiana),TRSH,pollen,NISP,,,,1,3,,,,,1,,,,,1,,,2,2,,,,5,,,,,,4,,,,,,,,,1,,,4,,,,1,
+Pteridium-type (P. aquilinum),VACR,spore,NISP,,2,1,2,1,8,3,4,8,5,1,,,5,10,5,3,30,8,9,,2,16,2,,1,13,12,10,3,4,2,6,45,2,3,10,39,6,7,4,33,5,18,8,15
+Pteris-type (P. dentata),VACR,spore,NISP,,,,,1,,,1,,,,,,,,,,,1,1,,,,2,,,,,,,,,,,,,,,,,,,,,,
+Pteris-type (P. muricella),VACR,spore,NISP,,,,,,,,,2,1,,,,,1,,,2,2,,,,,,,,3,,2,,,,,,,,,,,,3,,,,1,
+Pycnanthus angolensis-type,TRSH,pollen,NISP,,,,,1,1,,,,1,1,,,,2,2,,,3,1,,,,1,,,,,,,,,4,,,,2,2,,,1,1,1,,1,
+Rapanea melanophloeos-type,TRSH,pollen,NISP,,,,,,1,,,2,4,,,,1,,,,,,1,,,,2,,,,1,,,,,,,,,,1,,,,1,,,,
+Raphia,PALM,pollen,NISP,,2,2,2,9,3,,2,5,10,13,2,1,3,6,3,,1,15,3,2,13,2,4,5,2,3,2,7,21,1,4,4,8,,2,21,11,,,13,4,,3,4,17
+Rauvolfia,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,
+Rhamnaceae undiff.,TRSH,pollen,NISP,,,,,,1,,,1,2,,,,2,1,,,,,,,,,1,,,,,,4,,,1,,,,,1,,,,,,,,
+Rhaphiostylis,TRSH,pollen,NISP,,,1,,,1,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ricinus communis,UPHE,pollen,NISP,,4,2,1,1,,6,,,,,4,3,,,2,10,2,,,2,3,3,,,,5,,1,,2,1,,,,3,1,,5,,1,,4,3,3,
+Rubiaceae undiff.,TRSH,pollen,NISP,,,,1,3,,1,1,,1,3,,,3,3,,,,1,2,,,,4,1,,,,,2,,,,,1,,2,,1,,,3,,3,,
+Rubus pinnatus-type,TRSH,pollen,NISP,,,1,5,4,17,1,3,22,19,16,1,,18,2,4,2,2,13,6,,,7,5,9,1,4,13,16,43,1,,5,15,,,10,6,1,1,14,19,2,7,2,7
+Rumex,UPHE,pollen,NISP,,,,,,,,,,,1,,3,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,
+Sabicea-type (S. africana),TRSH,pollen,NISP,,,,,,,,,1,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sapotaceae undiff.,TRSH,pollen,NISP,,,,,1,3,1,,,2,3,1,,2,1,,1,,4,,,,2,1,1,,,,,2,,,1,,,,6,2,,1,4,,,,,3
+Schefflera myriantha-type,TRSH,pollen,NISP,,,,,,,,,,1,,,,,,,2,,,,,,,,,,,,1,,,,1,1,,,,1,,,,,,,,
+Sericostachys-type (S. scandens),UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,2,,,,,,,,,,2,,,,,,,,,,,,,,,,
+Seriphium kilimandscharicum-type,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,
+Shirakiopsis elliptica-type,TRSH,pollen,NISP,,,2,2,,12,3,,1,,6,,,4,,2,,5,2,4,,,,2,8,,,1,,1,1,,1,1,,2,3,1,2,1,4,7,1,2,1,
+Sida,UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,
+Solanum-type,UPHE,pollen,NISP,,,,,1,,,,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,,,,,,,,,,
+Sorindeia-type (S. juglandifolia),TRSH,pollen,NISP,,,1,9,10,4,,,5,7,11,4,1,8,4,2,,3,5,,,1,6,5,2,2,1,8,6,18,1,2,12,8,1,,13,10,,,5,5,3,2,7,10
+Spermacoce-type,UPHE,pollen,NISP,,1,,,,,,,,,,,,,,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Stephania-type (S. abyssinica),UPHE,pollen,NISP,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sterculia-type,TRSH,pollen,NISP,,,,1,,,,,,,,,,,,1,1,,,1,,,,,,,,,,,1,,,,,,,,,1,,,,,,
+Swertia-type (S. kilimandscharica),UPHE,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,1,,,,,,,,,,,,,,,,
+Symphonia globulifera,TRSH,pollen,NISP,,,,,,,,,,,,,,,1,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,
+Tabernaemontana crassa-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tacazzea-type (T. apiculata),UPHE,pollen,NISP,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tapinanthus-type,TRSH,pollen,NISP,,,1,,,,,,,2,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tetrapleura tetraptera-type,TRSH,pollen,NISP,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,
+Tetrorchidium,TRSH,pollen,NISP,,,3,5,8,3,,1,2,15,10,1,,8,4,,1,1,2,2,,,1,6,5,,1,10,6,15,,1,3,9,,,7,12,,2,8,23,3,1,1,8
+Thymelaeaceae,UPHE,pollen,NISP,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tilioideae undiff.,TRSH,pollen,NISP,,,,2,,,,,,,,,,,,1,,,,,,,,,,,,2,,,,,,,,,,,,,,,,,,
+Trema-type (T. orientalis),TRSH,pollen,NISP,,1,,1,1,3,,1,,3,2,,1,3,3,1,,2,5,,,,13,5,2,3,1,4,,6,,2,3,3,,2,8,4,3,2,2,5,,3,,
+Trichilia-type,TRSH,pollen,NISP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,
+Trilepisium-type (T. madagascariense),TRSH,pollen,NISP,,,,,3,1,,,6,3,2,,,3,3,,,1,4,4,,,,4,2,,1,2,1,1,1,1,4,6,,,7,2,,,1,1,,,2,1
+Triletes undiff.,PTER,spore,NISP,,,,2,,1,3,,,3,,,,,,,1,,,,,,,,1,1,,,,4,1,,,,,,2,,,1,2,1,,,1,3
+Triplochiton scleroxylon-type,TRSH,pollen,NISP,,,,3,,,,1,1,1,,,,5,,,,,,,,,,2,,,,,,,,,2,,,1,2,,,,3,,,,2,
+Typha,AQVP,pollen,NISP,,3,,1,,,2,1,,,1,1,,2,,,6,2,,,,,1,,1,1,,,1,,3,1,,,3,2,4,,2,1,,,3,1,2,
+Uapaca lissopyrena-type,TRSH,pollen,NISP,,4,2,1,4,,2,2,3,3,3,,2,,5,2,3,3,,,2,1,1,3,1,1,4,,6,10,4,,1,3,1,1,6,3,,1,6,1,1,3,3,
+Uapaca robynsii-type,TRSH,pollen,NISP,,,,,,6,,,1,,1,,,,1,,,1,,,,1,2,,,,1,,,1,1,,,,,1,,,1,,,,,,4,
+Uncaria-type (U. africana),TRSH,pollen,NISP,,,,2,4,1,,,1,2,1,1,,6,3,,,,,1,,,,9,,,,,3,1,,,5,,2,,1,,2,,,,,,,5
+Unknown,UNID,pollen/spore,NISP,,,1,,1,2,1,3,1,1,1,,,3,,,1,2,2,,2,,1,1,,5,1,3,,2,,1,,2,1,2,1,1,,,4,1,,1,1,6
+Urticaceae undiff.,UPHE,pollen,NISP,,1,,1,6,,3,,2,,1,,1,1,8,1,,1,,3,2,1,3,6,5,,,4,1,2,,,3,,1,,,,,1,1,,1,,3,2
+Utricularia-type (U. inflexa),AQVP,pollen,NISP,,,,,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vangueria madagascariensis-type,UPHE,pollen,NISP,,,,,,,,,,,,,,2,,,,,,,,,,,,,,,,,,,,,,2,,,,,,,,,,
+Vepris-type (V. nobilis),TRSH,pollen,NISP,,,,,,1,,,3,,,,,,,,,1,,,,,2,,2,,,,1,,,,,,,,1,,,,,2,,,,
+Vepris-type (V. trichocarpa),TRSH,pollen,NISP,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vernonieae undiff.,UPHE,pollen,NISP,,1,,,,,,1,,,,,,1,,,,,1,,,1,,,,1,,2,,,1,1,,,2,,,,1,1,1,,1,,1,1
+Virectaria,UPHE,pollen,NISP,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Zanha golungensis-type,TRSH,pollen,NISP,,1,,,3,4,,,3,2,3,,1,1,1,,,,,,,,,2,,,1,,,,,,1,,,,4,2,,,3,1,,,,2
+Zanthoxylum-type (Z. gilletii),TRSH,pollen,NISP,,,2,,,,,1,2,1,,,,,,,,,,1,,,,1,1,,,1,3,4,,,1,,,,,,,,,2,,,,
+Zanthoxylum-type (Z. zanthoxyloides),TRSH,pollen,NISP,,,,2,,1,,,,,,,,2,,,,,,3,,,,1,,,,,3,,,,,,,,,,,,,,,,,
