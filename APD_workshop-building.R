@@ -313,24 +313,98 @@ cov(FKEpct$Alchornea, FKEpct$Nymphaea)
 
 MBALA = read.csv("cores/MBALA.csv", header = TRUE)
 
+#Couple ways to read in data, both require specifics for file type.
+
+#Note that the file path begins at the working directory. 
+
+MBALA = read.table("cores/MBALA.csv", header = TRUE, sep = ",")
+
+#Call the object with the Mbalang .csv from Neotoma.
+
+MBALA
+
+#We want just the pollen counts and names, so we use what we know about navigating matrices to find the right starting row/column.
+#Use some informative functions to find other values. This can be entered manually, but the code is more portable when it uses functions.
+
 MBALA_pollen = MBALA[7:nrow(MBALA), 6:ncol(MBALA)]
 
-MBALA_taxa = MBALA[7:nrow(MBALA),1]
+#We isolate the taxonomic info so we can use it later. This includes the "group" info, which we can use for plotting.
 
-tMBALA = data.frame(t(MBALA_pollen))
+MBALA_taxa = MBALA[7:nrow(MBALA),1:2]
 
-i = c(1:ncol(tMBALA))
+#R read the file as a data.frame with character variables. This happens when columns include a mix of numbers and characters.
+#The subseet we created is classed the same way. We can confirm this.
 
-tMBALA = as.data.frame(apply(tMBALA, 2, as.numeric))
+class(MBALA_pollen)
 
-tMBALA[is.na(tMBALA)] = 0
+#Let's check the individual columns.
 
-colnames(tMBALA) = MBALA_taxa
+class(MBALA_pollen[,1])
 
-MBALA_pct = calculate_percent(tMBALA)
+#We can use sapply and check all columns.
+#Note that we already used apply(), where we had to define which direction to run the function (rows vs columns). The sapply() function defaults to columns.
 
-#Subsetting data.
-#Summarizing by ecological data.
+sapply(MBALA_pollen, class)
+
+#This won't do, so we use apply to make MBALA_pollen numeric. We wrap this in a function that preserves its status as a data.frame
+
+MBALA_num = as.data.frame (apply (MBALA_pollen, 2, as.numeric))
+
+#Let's check this to make sure it's numeric.
+
+sapply(MBALA_num, class)
+
+#If we look at the data, we see there's lots of NAs where the blank values were. Let's make these 0s, which is appropriate in this case.
+
+head(MBALA_num)
+
+MBALA_num[is.na(MBALA_num)] = 0
+
+head(MBALA_num)
+
+#Good. Let's add taxa names for the rows.
+
+row.names(MBALA_num) = MBALA_taxa$name
+
+#Great, we've got numeric data. Let's get on with calculating percents.
+
+#We will sum by taxonomic groups later and get a proper AP sum - for now, let's just get all these values as %.
+
+#Warining, what we are going to do will LOOK right, but it won't work.
+
+MBALA_sum = apply(MBALA_num, 2, sum)
+
+MBALA_pct = (MBALA_num / MBALA_sum) *100
+
+#Let's check to see that each sample's % adds up to 100.
+
+sapply(MBALA_pct, sum)
+
+#Whoops. Looks like they do not. Remember, R divides each column of MBALA_num by each value of MBALA_sum iteratively.
+
+#We can transpose the dataset. Notice that I am again retaining the data.frame setup. Some commands will change the matrix class (t, as.numeric).
+
+tMBALA = data.frame (t (MBALA_num))
+
+#Now we calculate percents.
+
+MBALA_sum = apply(tMBALA, 1, sum) #We use rows this time since table is transposed!
+
+MBALA_pct = (tMBALA / MBALA_sum) *100 
+
+#Let's check the rows sums.
+
+apply(MBALA_pct, 1, sum) 
+
+#We can also use our custom function.
+
+MBALA_pct = as.data.frame( calculate_percent (MBALA_num, flip_axis = TRUE) )
+
+#Check the results. 
+
+apply(MBALA_pct, 1, sum)
+
+#Subsetting and summarizing by ecological data.
 
 
 
