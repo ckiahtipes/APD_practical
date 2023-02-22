@@ -9,7 +9,7 @@ FAKEmin = c(40, 10, 20, 80, 50, 30, 5, 10, 5)
 FAKEmax = c(10, 2, 50, 20, 10, 20, 15, 20, 25)
 FAKEsd = c(5, 1, 10, 20, 15, 5, 2, 5, 2)
 
-FAKE1234 = matrix(nrow = 100, ncol = length(FAKE_taxa))
+FAKE1234 = matrix(nrow = length(FAKE_depth), ncol = length(FAKE_taxa))
 
 for(i in 1:ncol(FAKE1234)){
   FAKE1234[, i] = rnorm(nrow(FAKE1234), c(seq(FAKEmin[i], FAKEmax[i], length.out = nrow(FAKE1234))), FAKEsd[i])
@@ -30,7 +30,7 @@ barplot(t(FAKEpct), horiz = TRUE)
 
 barplot(t(FAKEpct), horiz = TRUE, main = "Fake Core Barplot by %", las=1)
 
-write.csv(FAKE1234[100:1,], "FAKE1234.csv", row.names = TRUE)
+write.csv(FAKE1234[length(FAKE_depth):1,], "FAKE1234.csv", row.names = TRUE)
 
 #Some fake botanical and ecological details.
 
