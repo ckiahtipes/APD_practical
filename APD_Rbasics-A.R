@@ -269,6 +269,10 @@ lines(apply(FAKEpct[ ,FAKE_taxa$FAKE_ecol == "tropical rain forest"], 1, sum),
 
 library(rioja)
 
+#We can look into the basics of the strat.plot() function.
+
+help("strat.plot")
+
 strat.plot(FAKEpct,
            yvar=seq(-200,-2,2),
            scale.percent = TRUE, 
