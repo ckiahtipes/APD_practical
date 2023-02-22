@@ -1,0 +1,66 @@
+---
+title: "Exercise B"
+author: "APD Practical Workshops"
+date: "2/22/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+#This is where we include necessary libraries and functions.
+
+library(rioja)
+
+make_pct = function(x, sample_cols = FALSE){
+  if(sample_cols == TRUE){
+    x_sum = apply(x, 2, sum)
+    pct = (t(x)/x_sum)*100
+  } else {
+    x_sum = apply(x, 1, sum)
+    pct = (x/x_sum)*100
+  }
+  pct
+}
+
+#Let's also include required data calls here.
+
+FAKE1234 = read.csv("cores/FAKE1234.csv", header = TRUE, row.names = "depth")
+
+FAKE_taxa = read.csv("cores/FAKE_taxa.csv", header = TRUE, row.names = "X")
+
+
+```
+
+## FAKE CORE RESULTS
+
+We created a fake core that was processed at our lab using methods. Samples yielded results as below.
+
+```{r table of results}
+
+#Extract sums and make table with samples and depths.
+
+FAKEsum = apply(FAKE1234, 1, sum)
+
+AP_sum = apply(FAKE1234[ ,FAKE_taxa$FAKE_plty == "TRSH"], 1, sum)
+
+N_sum = apply(FAKE1234[ , FAKE_taxa$FAKE_plty != "TRSH"], 1, sum)
+
+FAKE_table = cbind(row.names(FAKE1234), FAKEsum, AP_sum, N_sum)
+
+table_names = c("depths","All Pollen","AP sum","NAP sum")
+
+colnames(FAKE_table) = table_names
+
+knitr::kable(FAKE_table, row.names = FALSE)
+
+```
+
+## Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+
