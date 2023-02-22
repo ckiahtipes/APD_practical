@@ -265,7 +265,7 @@ lines(apply(FAKEpct[ ,FAKE_taxa$FAKE_ecol == "tropical rain forest"], 1, sum),
 
 #We can use the rioja package to make a pollen diagram.
 
-install.packages("rioja")
+#install.packages("rioja")
 
 library(rioja)
 
@@ -274,6 +274,7 @@ strat.plot(FAKEpct,
            scale.percent = TRUE, 
            plot.poly = TRUE, 
            col.poly = c(AP_colors,N_colors))
+
 
 
 
