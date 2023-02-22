@@ -128,7 +128,7 @@ apply(RDM1234, 2, mean)
 
 #rnorm() lets us do this, giving us random normal distribution with a moving average.
 
-rnorm(50, c(seq(25,50,0.5)), sd=5)
+rnorm(50, c( seq(25, 50, 0.5)), sd=5)
 
 #Still looks like we're building the dataset by individual columns. So, we need to define ranges for these values as well as sds.
 
@@ -154,17 +154,17 @@ FAKE_ECO[7,]=c(25,26,3)
 
 #Make fake matrix
 
-FKE1234 = matrix(nrow = 50, ncol = 7)
+FAKE1234 = matrix(nrow = 50, ncol = 7)
 
 #Fill fake matrix with rnorm data employing moving averages.
 
-for(i in 1:ncol(FKE1234)){
-  FKE1234[, i] = rnorm(nrow(FKE1234), c(seq(FAKE_ECO[i,1], FAKE_ECO[i,2], length.out = nrow(FKE1234))), FAKE_ECO[i,3])
+for(i in 1:ncol(FAKE1234)){
+  FAKE1234[, i] = rnorm(nrow(FAKE1234), c(seq(FAKE_ECO[i,1], FAKE_ECO[i,2], length.out = nrow(FAKE1234))), FAKE_ECO[i,3])
 }
 
 #Since we are pretending that these are fake pollen counts, they need to be whole numbers.
 
-FKE1234 = ceiling(FKE1234) #Rounding all values up to the nearest integer.
+FAKE1234 = ceiling(FAKE1234) #Rounding all values up to the nearest integer.
 
 #Add some pretend depths
 
@@ -176,33 +176,33 @@ taxa = c("Alchornea", "Macaranga", "Syzygium", "Blighia", "Terminalia", "Tetrorc
 
 #Doctor up the matrix with depths and fake names.
 
-row.names(FKE1234) = d
-colnames(FKE1234) = taxa
+row.names(FAKE1234) = d
+colnames(FAKE1234) = taxa
 
 #This basically works. We've made up a fake dataset!
 
-barplot(t(FKE1234), horiz = TRUE)
+barplot(t(FAKE1234), horiz = TRUE)
 
 #We can use apply to get sums for each column and create percentages.
 
-FKEsum = apply(FKE1234, 1, sum)
+FAKEsum = apply(FAKE1234, 1, sum)
 
-#It is worth thinking about how R does this. FKEsum gives us a vector of sums for each column. 
+#It is worth thinking about how R does this. FAKEsum gives us a vector of sums for each column. 
 
-### When we tell R to divide the FKE1234 matrix by the FKEsum vector, it starts at the first row, first column and divides it by the first row sum.
+### When we tell R to divide the FAKE1234 matrix by the FAKEsum vector, it starts at the first row, first column and divides it by the first row sum.
 ### Then, R moves to the second row  on the first column, dividing by the second row sum.
 ### This goes on until R gets to the bottom of the column, then it repeats this procedure for each column - cycling through the row sums each time.
 
 #THIS IS IMPORTANT BECAUSE R PREFERS DATA ORGANIZED WITH VARIABLES BY COLUMNS - APD/NEOTOMA DATA IS SAMPLES BY COLUMNS!
 
-FKEpct = (FKE1234/FKEsum)*100
+FAKEpct = (FAKE1234/FAKEsum)*100
 
-barplot(t(FKEpct), horiz = TRUE)
+barplot(t(FAKEpct), horiz = TRUE)
 
 #For base R, when we call plotting functions we can use any of the options in the plot() function generally. 
 #Here, we add a title to the plot and change the orientation of the y axis labels.
 
-barplot(t(FKEpct), horiz = TRUE, main = "Fake Core Barplot by %", las=1)
+barplot(t(FAKEpct), horiz = TRUE, main = "Fake Core Barplot by %", las=1)
 
 #There are a few ways to get to know more about a given function.
 #R Studio nicely brings up the functions options when you begin to enter the text. Type in "barplot" and add the first parentheses "("
@@ -239,32 +239,32 @@ calculate_percent = function(x, flip_axis = FALSE){
 
 #Then we call the function and use the default settings since our table is taxa as columns.
 
-calculate_percent(FKE1234)
+calculate_percent(FAKE1234)
 
 #When using functions, it is important to remember that the results need to be saved as an object in order for us to make use of them.
 
 #We can make this dataset a bit more useful by making it a data frame object. 
 
-FKEpct = as.data.frame(calculate_percent(FKE1234))
+FAKEpct = as.data.frame(calculate_percent(FAKE1234))
 
 #R recognizes two kinds of matrix-style objects, which are basically tables.
 #Remembering that R recognizes character, logical, and numeric data - a matrix can only contain one data type.
 #A data frame can contain multiple data types. It also gives us new tools for navigating the data.
 
-FKEpct$Alchornea #Calls the Alchornea percents.
-FKEpct[,"Alchornea"] #This is how we call this data in the matrix.
+FAKEpct$Alchornea #Calls the Alchornea percents.
+FAKEpct[,"Alchornea"] #This is how we call this data in the matrix.
 
-#If you type "FKEpct$", R Studio brings up all of the columns in your dataset. This can be navigated with the up and down arrows on your keyboard.
+#If you type "FAKEpct$", R Studio brings up all of the columns in your dataset. This can be navigated with the up and down arrows on your keyboard.
 
 #This way, one can easily extract and plot key insights without much work.
 
-plot(FKEpct$Alchornea, row.names(FKEpct))
+plot(FAKEpct$Alchornea, row.names(FAKEpct))
 
-points(FKEpct$Syzygium, row.names(FKEpct)) #Notice that we can add data to plots!
+points(FAKEpct$Syzygium, row.names(FAKEpct)) #Notice that we can add data to plots!
 
 #We can fancy up the plots easily by changing plot options.
 
-plot(FKEpct$Alchornea, row.names(FKEpct),
+plot(FAKEpct$Alchornea, row.names(FAKEpct),
      type="o", 
      pch = 1,
      col = "red",
@@ -272,14 +272,14 @@ plot(FKEpct$Alchornea, row.names(FKEpct),
      xlab = "Depth cm",
      ylab = "Percent of Pollen Sum")
 
-points(FKEpct$Syzygium, row.names(FKEpct),
+points(FAKEpct$Syzygium, row.names(FAKEpct),
      type="o", 
      pch = 2,
      col = "blue")
 
 #We can customize the plot quite a bit, if we know the right variables to modify.
 
-plot(FKEpct$Alchornea, row.names(FKEpct),
+plot(FAKEpct$Alchornea, row.names(FAKEpct),
      xlim = c(0,50),
      type="o", 
      pch = 1,
@@ -288,23 +288,23 @@ plot(FKEpct$Alchornea, row.names(FKEpct),
      xlab = "Depth cm",
      ylab = "Percent of Pollen Sum")
 
-points(FKEpct$Syzygium, row.names(FKEpct),
+points(FAKEpct$Syzygium, row.names(FAKEpct),
       type="o", 
       pch = 2,
       col = "blue")
 
-points(FKEpct$Macaranga, row.names(FKEpct),
+points(FAKEpct$Macaranga, row.names(FAKEpct),
       type="o", 
       pch = 3,
       col = "orange")
 
 #We can look for relationships with some basic statistics. Co-variance is extremely simple. 
 
-cov(FKEpct$Alchornea, FKEpct$Macaranga)
+cov(FAKEpct$Alchornea, FAKEpct$Macaranga)
 
-cov(FKEpct$Alchornea, FKEpct$Syzygium)
+cov(FAKEpct$Alchornea, FAKEpct$Syzygium)
 
-cov(FKEpct$Alchornea, FKEpct$Nymphaea)
+cov(FAKEpct$Alchornea, FAKEpct$Nymphaea)
 
 ### NEED TO THINK ABOUT WHERE WE ARE GOING HERE...
 
@@ -406,14 +406,46 @@ apply(MBALA_pct, 1, sum)
 
 #Subsetting and summarizing by ecological data.
 
+###Buildout for making random pollen data table.
 
+FAKE_taxa = c("Cyperaceae undiff.", "Typha", "Poaceae", "Alchornea", "Macaranga", "Celtis", "Blighia", "Sapotaceae undiff.", "Guibourtia demeusei")
 
+FAKE_depth = seq(-200, -2, 2)
+FAKEmin = c(40, 10, 20, 80, 50, 30, 5, 10, 5)
+FAKEmax = c(10, 2, 50, 20, 10, 20, 15, 20, 25)
+FAKEsd = c(5, 1, 10, 20, 15, 5, 2, 5, 2)
 
+FAKE1234 = matrix(nrow = 100, ncol = length(FAKE_taxa))
 
+for(i in 1:ncol(FAKE1234)){
+  FAKE1234[, i] = rnorm(nrow(FAKE1234), c(seq(FAKEmin[i], FAKEmax[i], length.out = nrow(FAKE1234))), FAKEsd[i])
+}
 
+FAKE1234 = abs( ceiling(FAKE1234) ) #Using abs() to scrub negative values. 
 
+colnames(FAKE1234) = FAKE_taxa
+row.names(FAKE1234) = FAKE_depth
 
+FAKEsum = apply(FAKE1234, 1, sum)
 
+FAKEpct = (FAKE1234/FAKEsum)*100
 
+row.names(FAKEpct) = FAKE_depth
 
+barplot(t(FAKEpct), horiz = TRUE)
 
+barplot(t(FAKEpct), horiz = TRUE, main = "Fake Core Barplot by %", las=1)
+
+write.csv(FAKE1234[100:1,], "FAKE1234.csv", row.names = TRUE)
+
+#Some fake botanical and ecological details.
+
+FAKE_taxa = c("Cyperaceae undiff.", "Typha", "Poaceae", "Alchornea", "Macaranga", "Celtis", "Blighia", "Sapotaceae undiff.", "Guibourtia demeusei")
+
+FAKE_fmly = c("CYPERACEAE", "TYPHACEAE", "POACEAE", "EUPHORBIACEAE", "EUPHORBIACEAE", "CANNABACEAE", "SAPINDACEAE", "SAPOTACEAE", "FABACEAE")
+FAKE_plty = c("N", "N", "N", "TRSH", "TRSH", "TRSH", "TRSH", "TRSH", "TRSH")
+FAKE_ecol = c("Wetland", "Wetland", "Grasses", "Pioneers", "Pioneers", "semi-deciduous rain forest", "tropical rain forest", "tropical rain forest", "flooded rain forest")
+
+FAKE_details = cbind(FAKE_taxa, FAKE_fmly, FAKE_plty, FAKE_ecol)
+
+write.csv(FAKE_details, "FAKE_taxa.csv")
