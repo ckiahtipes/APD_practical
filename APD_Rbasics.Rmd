@@ -3,10 +3,10 @@ title: "R Basics for Paleoecologists"
 author: "C.A. Kiahtipes"
 date: "2/14/2023"
 output:
+  html_document: default
+  word_document: default
   pdf_document:
     pandoc_args: ["--extract-media","."]
-  word_document: default
-  html_document: default
 ---
 
 ```{r setup, include=FALSE}
